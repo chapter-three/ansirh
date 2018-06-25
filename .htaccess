@@ -1,0 +1,244 @@
+#
+# Apache/PHP/Drupal settings:
+#
+
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\.(?!well-known).*|Entries.*|Repository|Root|Tag|Template|composer\.(json|lock))$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+Order allow,deny
+  </IfModule>
+</FilesMatch>
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Make Drupal handle any 404 errors.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+# Override PHP settings that cannot be changed at runtime. See
+# sites/default/default.settings.php and drupal_environment_initialize() in
+# includes/bootstrap.inc for settings that can be changed at runtime.
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+    php_flag magic_quotes_gpc                 off
+    php_flag magic_quotes_sybase              off
+    php_flag register_globals                 off
+    php_flag session.auto_start               off
+    php_value mbstring.http_input             pass
+    php_value mbstring.http_output            pass
+    php_flag mbstring.encoding_translation    off
+</IfModule>
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+    # Enable expirations.
+    ExpiresActive On
+
+    # Cache all files for 2 weeks after access (A).
+    ExpiresDefault A1209600
+
+    <FilesMatch \.php$>
+        # Do not allow PHP scripts to be cached unless they explicitly send cache
+        # headers themselves. Otherwise all scripts would have to overwrite the
+        # headers set by mod_expires if they want another caching behavior. This may
+        # fail if an error occurs early in the bootstrap process, and it may cause
+        # problems if a non-Drupal PHP file is installed in a subdirectory.
+        ExpiresActive Off
+    </FilesMatch>
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Set "protossl" to "s" if we were accessed via https://.  This is used later
+    # if you enable "www." stripping or enforcement, in order to ensure that
+    # you don't bounce between http and https.
+    RewriteRule ^ - [E=protossl]
+    RewriteCond %{HTTPS} on
+    RewriteRule ^ - [E=protossl:s]
+
+    # Make sure Authorization HTTP header is available to PHP
+    # even when running as CGI or FastCGI.
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Block access to "hidden" directories whose names begin with a period. This
+    # includes directories used by version control systems such as Subversion or
+    # Git to store control files. Files whose names begin with a period, as well
+    # as the control files used by CVS, are protected by the FilesMatch directive
+    # above.
+    #
+    # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
+    # not possible to block access to entire directories from .htaccess, because
+    # <DirectoryMatch> is not allowed here.
+        #
+        # If you do not have mod_rewrite installed, you should remove these
+        # directories from your webroot or otherwise protect them from being
+        # downloaded.
+  RewriteRule "/\.|^\.(?!well-known/)" - [F]
+
+        # If your site can be accessed both with and without the 'www.' prefix, you
+        # can use one of the following settings to redirect users to your preferred
+        # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
+        #
+        # To redirect all users to access the site WITH the 'www.' prefix,
+        # (http://example.com/... will be redirected to http://www.example.com/...)
+        # uncomment the following:
+        RewriteCond %{HTTP_HOST} .
+        RewriteCond %{HTTP_HOST} !^www\. [NC]
+        RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+        #
+        # To redirect all users to access the site WITHOUT the 'www.' prefix,
+        # (http://www.example.com/... will be redirected to http://example.com/...)
+        # uncomment the following:
+        # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+        # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+        # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
+        # VirtualDocumentRoot and the rewrite rules are not working properly.
+        # For example if your site is at http://example.com/drupal uncomment and
+        # modify the following line:
+        # RewriteBase /drupal
+        #
+        # If your site is running in a VirtualDocumentRoot at http://example.com/,
+        # uncomment the following line:
+        # RewriteBase /
+
+        # Pass all requests not referring directly to files in the filesystem to
+        # index.php. Clean URLs are handled in drupal_environment_initialize().
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_URI} !=/favicon.ico
+        RewriteRule ^ index.php [L]
+
+        # Rules to correctly serve gzip compressed CSS and JS files.
+        # Requires both mod_rewrite and mod_headers to be enabled.
+        <IfModule mod_headers.c>
+            # Serve gzip compressed CSS files if they exist and the client accepts gzip.
+            RewriteCond %{HTTP:Accept-encoding} gzip
+            RewriteCond %{REQUEST_FILENAME}\.gz -s
+            RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+
+            # Serve gzip compressed JS files if they exist and the client accepts gzip.
+            RewriteCond %{HTTP:Accept-encoding} gzip
+            RewriteCond %{REQUEST_FILENAME}\.gz -s
+            RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+
+            # Serve correct content types, and prevent mod_deflate double gzip.
+            RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+            RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
+
+            <FilesMatch "(\.js\.gz|\.css\.gz)$">
+            # Serve correct encoding type.
+            Header set Content-Encoding gzip
+            # Force proxies to cache gzipped & non-gzipped css/js files separately.
+            Header append Vary Accept-Encoding
+            </FilesMatch>
+        </IfModule>
+</IfModule>
+
+# Add headers to all responses.
+<IfModule mod_headers.c>
+    # Disable content sniffing, since it's an attack vector.
+    Header always set X-Content-Type-Options nosniff
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RedirectMatch 301 /research/turnaway?$ /research/turnaway-study
+    RedirectMatch 301 /about/conference_center.php?$ /about/felicia-stewart-conference-center
+    RedirectMatch 301 /about/contact.php?$ /about/contact-us
+    RedirectMatch 301 /about/history.php?$ /about/history
+    RedirectMatch 301 /about/mission.php?$ /about/ansirhs-mission
+    RedirectMatch 301 /about/staff.php?$ /about/faculty-and-staff
+    RedirectMatch 301 /about/work.php?$ /about/job-openings
+    RedirectMatch 301 /about/work/faculty_openings.php?$ /about/job-openings
+    RedirectMatch 301 /about/work/internship_openings.php?$ /about/job-openings
+    RedirectMatch 301 /about/work/staff_openings.php?$ /about/job-openings
+    RedirectMatch 301 /library/librarypublications2.php?$ /ansirh-publications
+    RedirectMatch 301 /library/posters.php?$ /publications/presentations
+    RedirectMatch 301 /library/presentations.php?$ /publications/presentations
+    RedirectMatch 301 /library/publications.php?$ /ansirh-publications
+    RedirectMatch 301 /library/reading.php?$ /ansirh-publications
+    RedirectMatch 301 /news-item/ansirh-joins-in-celebrating-15-years-of-fda-approval-for-mifepristone-learn-more-about-our-ansirhs-research-around-medication-abortion/?$ /news/ansirh-joins-celebrating-15-years-fda-approval-mifepristone
+    RedirectMatch 301 /news-item/ansirhs-abortion-onscreen-project-examines-portrayals-of-abortion-over-the-last-10-years/?$ /news/ansirhs-abortion-onscreen-project-examines-portrayals-abortion-television-over-last-10-years
+    RedirectMatch 301 /news-item/new-publication-the-effect-of-abortion-on-having-and-achieving-aspirational-one-year-plans/?$ /news/effect-abortion-on-aspirational-one-year-plans
+    RedirectMatch 301 /news-item/projections-opinions-100-experts-long-acting-reversible/?$ /news/projections-and-opinions-100-experts-long-acting-reversible-contraception
+    RedirectMatch 301 /news-item/turnaway-study-emotions-and-mental-health-study-findings/?$ /news/new-ansirh-studies-find-no-evidence-post-abortion-trauma-syndrome
+    RedirectMatch 301 /news-item/welcome-dan-grossman-director/?$ /news/ansirh-welcomes-dr-dan-grossman-our-new-director
+    RedirectMatch 301 /news/calendar.php?$ http://www.societyfp.org/536
+    RedirectMatch 301 /news/new_ansirh.php?$ /news/ANSIRH-news
+    RedirectMatch 301 /news/new_ANSIRH.php?$ /news/ANSIRH-news
+    RedirectMatch 301 /news/new_field.php?$ /news/ANSIRH-news
+    RedirectMatch 301 /news-events/ansirh-in-the-news?$ /ansirh-in-the-media
+    RedirectMatch 301 /news/ansirh-in-the-news?$ /ansirh-in-the-media
+    RedirectMatch 301 /news/new_field.php?$ /news/ANSIRH-news
+    RedirectMatch 301 /research/turnaway.php?$ /research/turnaway-study
+    RedirectMatch 301 /research/abortion-onscreen.php?$ /research/abortion-onscreen
+    RedirectMatch 301 /research/empowerment.php?$ /research/reproductive-autonomy
+    RedirectMatch 301 /research/ohios-transfer-agreement-and-medication-abortion-laws?$ /research/ohios-medication-abortion-and-transfer-agreement-laws
+    RedirectMatch 301 /research/pci.php?$ /research/primary-care-initiative
+    RedirectMatch 301 /research/refusals.php?$ /research/reproductive-health-religious-hospitals
+    RedirectMatch 301 /research/restrictions.php?$ /research/abortion-restrictions
+    RedirectMatch 301 /research/turnaway.php?$ /research/turnaway-study
+    RedirectMatch 301 /research/turnaway/future-research.php?$ /research/global-turnaway-study
+    RedirectMatch 301 /research/ultrasound.php?$ /research/ultrasound-viewing
+    RedirectMatch 301 /search.php?$ /search
+    RedirectMatch 301 /staff-members/aisha-mays-md/?$ /staff-members/aisha-mays
+    RedirectMatch 301 /staff-members/alice-cartwright-mph/?$ /staff-members/alice-cartwright
+    RedirectMatch 301 /staff-members/bonnie-scott-jones-jd/?$ /staff-members/bonnie-scott-jones
+    RedirectMatch 301 /staff-members/daniel-grossman-md/?$ /staff-members/daniel-grossman
+    RedirectMatch 301 /staff-members/gretchen-sisson-phd/?$ /staff-members/gretchen-sisson
+    RedirectMatch 301 /staff-members/monica-mclemore-rn-mph-phd/?$ /staff-members/monica-mclemore
+    RedirectMatch 301 /staff-members/nancy-berglas-drph/?$ /staff-members/nancy-berglas
+    RedirectMatch 301 /staff-members/patricia-anderson-mph/?$ /staff-members/patricia-anderson
+    RedirectMatch 301 /staff-members/rana-e-barar-mph/?$ /staff-members/rana-e-barar
+    RedirectMatch 301 /staff-members/rebecca-kriz-rn-ms/?$ /staff-members/rebecca-kriz
+    RedirectMatch 301 /staff-members/sara-daniel-mph/?$ /staff-members/sara-daniel
+    RedirectMatch 301 /training/apctoolkit.php?$ /publications/training/apc-toolkit
+    RedirectMatch 301 /training/workbook.php?$ /publications/training/early-abortion-training-workbook
+    RedirectMatch 301 /training/workbook/workbook-resources.php?$ /publications/training/early-abortion-training-workbook
+    RedirectMatch 301 /about/conference_center/contribute.php?$ /about/felicia-stewart-conference-center
+    RedirectMatch 301 /library/links.php?$ /ansirh-resources
+    RedirectMatch 301 /news-item/carole-joffe-publishes-new-textbook-reproduction-society/?$ /staff-members/carole-joffe
+    RedirectMatch 301 /news-item/increased-access-to-oral-contraceptives-would-result-in-public-sector-cost-savings-study-finds/?$ /research/moving-oral-contraceptives-over-counter-us
+    RedirectMatch 301 /news-item/kimport/?$ /https://www.youtube.com/watch?v=L7K_xZe9Eps
+    RedirectMatch 301 /news-item/mhpsho/?$ /http://www.msnbc.com/melissa-harris-perry/watch/harris-perry-reproductive-rights-are-an-economic-imperative-11425859789
+    RedirectMatch 301 /news-item/new-ansirh-study-shows-louisiana-admitting-privileges-law-would-drastically-limit-abortion-access/?$ /research/louisianas-admitting-privileges-law
+    RedirectMatch 301 /news-item/new-turnaway-study-data-in-ajph/?$ /content/denial-abortion-because-provider-gestational-age-limits-united-states
+    RedirectMatch 301 /news-item/turnaway/?$ /research/turnaway-study
+    RedirectMatch 301 /research/aspects.php?$ /research/turnaway-study
+    RedirectMatch 301 /research/pci/access.php?$ /research/primary-care-initiative
+    RedirectMatch 301 /research/pci/access/issue-briefs.php?$ /resources/issue-briefs
+    RedirectMatch 301 /research/pci/access/pci_resources.php?$ /research/primary-care-initiative
+    RedirectMatch 301 /research/pci/hwpp.php?$ /research/hwpp-AB154
+    RedirectMatch 301 /research/pci/hwpp/hwpp-curriculum-and-competency-resources.php?$ /research/hwpp-curriculum-and-competency-resources
+    RedirectMatch 301 /research/pci/hwpp/hwppresults.php?$ /sites/default/files/documents/hwppupdate-june2014.pdf
+    RedirectMatch 301 /research/pci/hwpp/HWPPresults.php?$ /sites/default/files/documents/hwppupdate-june2014.pdf
+    RedirectMatch 301 /research/refusals/refusals-resources.php?$ /research/reproductive-health-religious-hospitals
+    RedirectMatch 301 /research/turnaway/participant-stories.php?$ /research/turnaway-study
+    RedirectMatch 301 /research/turnaway/participant-stories/turnaway-report1.php?$ /research/turnaway-study
+    RedirectMatch 301 /research/turnaway/participant-stories/turnaway-report2.php?$ /research/turnaway-study
+    RedirectMatch 301 /research/turnaway/participant-stories/turnaway-report3.php?$ /research/turnaway-study
+    RedirectMatch 301 /sitemap.php?$ /sitemap
+    RedirectMatch 301 /training/hwpp-curriculum-and-competency-resources.php?$ /research/hwpp-AB154
+    RedirectMatch 301 /wp-content/uploads/2013/08/upadhay_ajph1-2013.pdf?$ /sites/default/files/publications/files/upadhay-sep14-denial_of_abortion.pdf
+    RedirectMatch 301 /wp-content/uploads/mauldon-foster-roberts_perspectives2015.pdf?$ http://onlinelibrary.wiley.com/doi/10.1363/47e2315/pdf
+    RedirectMatch 301 /wp-content/uploads/2014-9Foster-unwanted-pregnancy-effects.pdf?$ /sites/default/files/publications/files/2014-9foster-unwanted-pregnancy-effects.pdf
+    RedirectMatch 301 /research/late-abortion.php?$ http://www.laterabortion.org
+    RedirectMatch 301 /research/late-abortion/.*?$ http://www.laterabortion.org
+    RedirectMatch 301 /news/new-abortion-onscreen-database?$ /research/abortion-onscreen-database
+
+</IfModule>
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

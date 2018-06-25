@@ -1,0 +1,3757 @@
+
+/* --- Global --- */
+
+body,
+body.bf-a {
+    color: #4D4D4D;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+#main-content .page-view .grid-inner {
+    padding: 0;
+}
+
+.fs-medium {
+    font-size: 1.4em;
+}
+
+#print-logo {
+    display: none;
+}
+
+#main-wrapper a {
+    border-bottom: 1px dotted #215281;
+    color: #215281;
+}
+
+a:hover {
+    color: #F48024 !important;
+}
+
+#main-wrapper a.image {
+    border-bottom: 0;
+}
+
+#ucsf-banner-nav .top-header-container ul.menu li a:hover {
+    color: #fff !important;
+}
+
+.light {
+    color: #777;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.file-icon {
+    display: none;
+}
+
+#page-title {
+    float: none;
+    font-family: "open-sans",helvetica,sans-serif;
+    font-size: 2.333em;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0 0 20px;
+    padding: 0;
+    text-transform: none;
+}
+
+.caps-title {
+    margin-bottom: 10px;
+}
+
+.caps-title .views-label {
+    color: #F48024;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.views-more-link {
+    margin-left: 20px;
+}
+
+.align-right {
+    display: inline-block;
+    float: right;
+    margin: 6px 0 6px 25px;
+    max-width: 60% !important;
+}
+
+.align-left {
+    display: inline-block;
+    float: left;
+    margin: 6px 25px 6px 0;
+    max-width: 60% !important;
+}
+
+.image-left {
+    float: left;
+    margin: 7px 25px 5px 5px;
+    max-width: 60% !important;
+}
+
+.image-right {
+    float: right;
+    margin: 7px 5px 5px 25px;
+    max-width: 60% !important;
+}
+
+.caption {
+    color: #da701c;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+#main-wrapper .caption a {
+    border-bottom-color: #da701c;
+    color: #da701c;
+}
+
+#main-wrapper .caption a:hover {
+    border-bottom-color: #052049;
+    color: #052049 !important;
+}
+
+.align-right .caption {
+    padding-bottom: 0;
+}
+
+.banner-credit {
+    color: #777;
+    margin-top: 35px;
+}
+
+.views-field-field-credit p {
+    display: inline;
+}
+
+.related {
+    border-top: 1px solid #F48024;
+    color: #F48024;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+.source,
+.book {
+    font-style: italic;
+}
+
+/* pagers */
+
+#main-wrapper .item-list .pager li {
+    background: none;
+    padding-left: 0;
+}
+
+#main-wrapper .item-list ul.pager li a {
+    background: none;
+    border-bottom: 0;
+    color: #052049;
+    font-weight: 300;
+}
+
+#main-wrapper .item-list ul.pager li a:hover {
+    color: #F48024;
+}
+
+#main-wrapper .item-list .pager li.pager-current {
+    color: #F48024;
+    font-weight: 700;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.sidebar .views-exposed-form .views-widget-per-page label {
+    color: #F48024;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin: 5px 0 3px;
+}
+
+.bef-select-as-links,
+.bef-select-as-links div {
+    display: inline;
+    font-size: 0.95em;
+}
+
+#main-wrapper .bef-select-as-links a {
+    border-bottom: 0;
+}
+
+#main-wrapper .bef-select-as-links a::after {
+    content: ' | ';
+}
+
+#main-wrapper .bef-select-as-links #edit-items-per-page-all a::after {
+    content: '';
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F48024;
+}
+
+h1 {
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 1.5em;
+}
+
+h4 {
+}
+
+h5 {
+    border-bottom: 1px solid #999;
+    color: #333;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2.pane-title {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#header-wrapper,
+#menu-bar-wrapper {
+    background-color: #506380 !important;
+}
+
+#header-wrapper .container {
+    width: 1110px;
+}
+
+#header-wrapper .container .grid-inner {
+    padding: 10px 0 5px;
+}
+
+#logo {
+    margin-left: 5px;
+}
+
+#main-wrapper {
+    padding-top: 10px;
+}
+
+/*
+#main-content .region-content #block-system-main {
+    padding-right: 30px;
+}
+*/
+
+#main-content > .grid-inner {
+    padding: 0 50px 0 10px;
+}
+
+#sidebar-second-wrapper {
+    padding-top: 18px;
+}
+
+#sidebar-second-wrapper .grid-inner {
+    padding: 0;
+}
+
+.summary-text p {
+    display: inline;
+}
+
+.article {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.article ol > li {
+    margin-top: 12px;
+}
+
+.article ul ol li {
+    background: none;
+    list-style-type: roman;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.article ol.short {
+    margin-left: 15px;
+}
+
+.notes,
+.abortion-onscreen-database .views-field-field-credit-1 .show {
+    border-top: 1px solid #efece1;
+    font-size: 80% !important;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+}
+
+.notes > ol {
+    margin-left: 12px;
+}
+
+.notes li {
+    margin-bottom: 8px;
+}
+
+.article .menu.node-links {
+    display: none;
+}
+
+.credits {
+    font-size: 80%;
+}
+
+/* --- Forms --- */
+
+.views-exposed-widget span.button input.form-submit {
+    background-color: #052049;
+    border: 0;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    padding: 7px 7px 5px;
+}
+
+/* --- Items List --- */
+
+.not-front #main-content ul {
+    margin-left: 0;
+}
+
+.not-front #main-content ul li {
+    background: url(/sites/all/themes/ansirh/images/bullet_blue.png) 0 9px no-repeat;
+    list-style: none;
+    margin: 12px 0 0 0;
+    padding-left: 11px;
+}
+
+/* --- Menu --- */
+
+#menu-bar-wrapper {
+    border-top: 0 !important;
+}
+
+#menu-bar-wrapper .region-menu-bar {
+    float: left;
+    width: 65%;
+}
+
+li.sf-depth-1 > a,
+li.sf-depth-1 > span {
+    background-color: transparent !important;
+    color: #eaf1f7 !important;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fs-medium #superfish-1 a,
+.fs-medium #superfish-1 span {
+    font-size: 12px;
+}
+
+.node-type-faculty-staff span#about,
+.about span#about,
+.newsletter span#about,
+.node-type-research-project a#research,
+.node-type-research-study a#research,
+.page-resources a#resources,
+.page-ansirh-resources a#resources,
+.resources a#resources,
+.explained-abortion-research-policy a#resources,
+.page-publications a#publications,
+.page-ansirh-publications a#publications,
+.node-type-publication a#publications,
+.early-abortion-training-workbook a#publications,
+.apc-toolkit a#publications,
+.research a#research,
+.ansirh-in-the-news span#news,
+.ansirh-in-the-media span#news,
+.ANSIRH-news span#news,
+.news span#news,
+.front a#home,
+li.sf-depth-1 > a:hover,
+li.sf-depth-1 > span:hover,
+li.sf-depth-1 > a:active,
+li.sf-depth-1 > span:active,
+li.sf-depth-1 > a:focus,
+li.sf-depth-1 > span:focus,
+li.sf-depth-1.sfhover > a,
+.menu.sf-menu.sf-style-university > li.sfHover > a,
+.menu.sf-menu.sf-style-university > li > a:active,
+.menu.sf-menu.sf-style-university > li > a:focus,
+.menu.sf-menu.sf-style-university > li > a:hover,
+.page-search .form-item-search-block-form,
+.page-node-393 .form-item-search-block-form,
+.page-node-394 .form-item-search-block-form {
+    background-color: transparent !important;
+    border-bottom: 5px solid #F48024 !important;
+    color: #eaf1f7 !important;
+}
+
+.page-search #search-block-form .form-item-search-block-form,
+.page-node-393 #search-block-form .form-item-search-block-form,
+.page-node-394 #search-block-form .form-item-search-block-form {
+    padding-bottom: 6px;
+}
+
+.block ul.menu li.active-trail > a, .block ul.menu li > a.active {
+    background-image: none;
+}
+
+.menu.sf-menu.sf-style-university > li > span {
+    background: url("/sites/all/themes/ansirh/images/arrow-3.png") no-repeat scroll 3px 18px;
+    color: #eaf1f7;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#superfish-1.menu.sf-menu.sf-style-university ul {
+    box-shadow: none;
+    padding: 0;
+}
+
+.menu.sf-menu.sf-style-university ul {
+    background-color: #425776 !important;
+}
+
+#superfish-1 .sf-depth-2 a,
+#superfish-1 .sf-depth-2 span {
+    border-top: 0 !important;
+    color: #acb4c0 !important;
+    display: block;
+    line-height: 1.4;
+    padding: 6px 10px 7px 12px;
+}
+
+#superfish-1 li.first.sf-depth-2 > a,
+#superfish-1 li.first.sf-depth-3 > a {
+    padding-top: 12px;
+}
+
+#superfish-1 li.last.sf-depth-2 > a,
+#superfish-1 li.last.sf-depth-3 > a {
+    padding-bottom: 12px;
+}
+
+/*
+#superfish-1 > li > a,
+#superfish-1 > li > a:hover,
+#superfish-1 > li > a.active,
+#superfish-1 > li > a.focus,
+.menu.sf-menu.sf-style-university > li.active-trail > a,
+.menu.sf-menu.sf-style-university li a.active,
+.menu.sf-menu.sf-style-university li a.active:active,
+.menu.sf-menu.sf-style-university li a.active:focus,
+.menu.sf-menu.sf-style-university li a.active:hover {
+    background-color: transparent;
+    border-bottom: 0;
+    color: #eaf1f7 !important;
+}
+
+*/
+.menu.sf-menu.sf-style-university > li.active-trail > a,
+.menu.sf-menu.sf-style-university li a.active,
+.menu.sf-menu.sf-style-university li a.active:active,
+.menu.sf-menu.sf-style-university li a.active:focus,
+.menu.sf-menu.sf-style-university li a.active:hover {
+    background-color: transparent;
+    border-bottom: 0;
+    color: #eaf1f7 !important;
+}
+
+.block ul.menu li.active-trail > a {
+    background-color: transparent;
+}
+
+.block ul.menu li li a.active {
+    background-image: none;
+    background-color: #052049 !important;
+}
+
+#superfish-1 .sf-depth-2.menuparent {
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+#superfish-1 .sf-depth-2 a:hover,
+#superfish-1 .sf-depth-2 span:hover {
+    background-color: #F48024 !important;
+    color: #fff !important;
+}
+
+#superfish-1 .sf-depth-2 a.active {
+    color: #fff !important;
+}
+
+#superfish-1 .sf-depth-3 a,
+#superfish-1 .sf-depth-3 span {
+    background-color: #394f6f;
+}
+
+#superfish-1 .sf-depth-3 a:hover,
+#superfish-1 .sf-depth-3 span:hover {
+    background-color: #F48024 !important;
+    color: #fff !important;
+}
+
+#superfish-1 ul li a.menuparent.sf-depth-3 {
+    font-weight: normal !important;
+    text-transform: none !important;
+}
+
+#superfish-1 .sf-depth-3 .sf-sub-indicator {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+a .sf-sub-indicator {
+    top: 1.45em !important;
+}
+
+.region-header {
+    float: right;
+    margin: 0;
+    width: 33%;
+}
+
+/*
+.menu.sf-menu.sf-style-university ul,
+.sfmenu .sf-megamenu,
+.sf-menu .sf-megamenu-column,
+.menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+    margin: 0;
+    padding: 0 !important;
+}
+*/
+
+/*
+#superfish-1 > li > ul.sf-megamenu {
+    padding: 5px 0 7px !important;
+}
+*/
+
+/*
+#superfish-1 ul.sf-megamenu li.sf-megamenu-wrapper ol li a,
+#superfish-1 ul.sf-megamenu li.sf-megamenu-wrapper ol li a.active,
+#superfish-1 ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-no-children a {
+    border-top: 0 !important;
+    line-height: 1.3;
+    padding: 5px 10px 6px;
+}
+
+*/
+/*
+.menu.sf-menu.sf-style-university#superfish-1 ul.sf-megamenu {
+    border-top: 1px solid #F48024 !important;
+}
+
+*/
+/*
+#block-superfish-1 .menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+    width: 11em;
+}
+
+.menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li a:hover,
+#superfish-1 > li.active-trail li.sf-megamenu-wrapper ol li a.active:hover {
+    background-color: #F48024;
+}
+
+#superfish-1 ul li a {
+    padding-left: 12px;
+}
+
+#superfish-1 ul.sf-megamenu li.sf-megamenu-wrapper ol li.first a,
+#superfish-1 ul.sf-megamenu li.sf-megamenu-wrapper ol li.first.active-trail a {
+    padding-top: 10px;
+}
+
+#superfish-1 ul.sf-megamenu li.sf-megamenu-wrapper ol li.last a {
+    padding-bottom: 12px;
+}
+
+.sf-depth-2.menuparent {
+    padding-top: 10px !important;
+    padding-bottom: 6px !important;
+}
+
+.sf-depth-3 {
+    padding-top: 3px !important;
+}
+*/
+
+/*#menu-1690-1 {
+    clear: both;
+}*/
+
+/* --- Search Blocks --- */
+.block-search {
+}
+
+/* Search blocks in header */
+.region-header .block-search .block-inner,
+.region-header .block-search .form-item,
+.region-header #search-block-form {
+    margin: 0;
+    padding: 0;
+}
+
+.region-header .block-search .container-inline div {
+    display: block;
+    float: left;
+}
+
+.region-header #search-block-form .form-text {
+    background: #425776;
+    border: 0;
+    color: #9BA6B6;
+    font-size: 1em;
+    height: 30px;
+    line-height: 100%;
+    padding: 0 10px;
+    width: 190px;
+}
+
+.region-header #search-block-form .form-submit {
+    background: #394f6f url('/sites/all/themes/tb_university/images/bg-button-search.png') no-repeat 50% 50%;
+    border: 0;
+    color: #9BA6B6;
+    font-size: 1em;
+    text-indent: -999em;
+    height: 30px;
+    line-height: 30px;
+    padding: 6px;
+    float: right;
+    cursor: pointer;
+    vertical-align: top;
+    width: 36px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s
+}
+.region-header #search-block-form .form-submit:hover,
+.region-header #search-block-form .form-submit:focus {
+    background-color: #F48024;
+}
+
+#menu-bar-wrapper .container.grid-24 {
+     width: 1200px;
+ }
+
+.donate {
+    display: inline-block;
+    background-color: #f48024;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-left: 13px;
+    margin-top: 1px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+
+.donate a,
+.donate a:hover {
+    color: #fff !important;
+    font-weight: 300;
+}
+
+/* --- Footer --- */
+
+.fs-medium #panel-fourth-wrapper,
+.fs-medium #panel-fifth-wrapper {
+    font-size: 13px;
+}
+
+#panel-fourth-wrapper,
+#panel-fifth-wrapper,
+#breadcrumb-wrapper,
+#footer-wrapper {
+    background-image: none !important;
+    background-color: #052049 !important;
+    color: #9BA6B6 !important;
+}
+
+#panel-fourth-wrapper .block-title, #panel-fifth-wrapper .block-title {
+    color: #9BA6B6 !important;
+}
+
+#panel-fourth-wrapper .panel-column {
+    padding: 0;
+    width: 31%;
+}
+
+#panel-fourth-wrapper .panel-column.panel-fourth-2 {
+    margin-left: 10%;
+    width: 27%;
+}
+
+.block-newsletter form {
+    margin-top: 3px;
+    overflow: auto;
+}
+
+.block-newsletter .form-item-email {
+    overflow: auto;
+}
+
+.block-newsletter #newsletter-subscribe-form .form-item-email input {
+    background-color: #999999;
+    color: #fff;
+    float: left;
+    margin-right: 0;
+    min-width: 70%;
+    padding: 4px 15px 4px 10px;
+}
+
+/*.block-newsletter .form-item-email input {
+    background-color: #999999 !important;
+    min-width: 70% !important;
+}*/
+
+.block-newsletter span.button input.form-submit {
+    background-color: #f48024;
+    border: 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 5px 15px 5px;
+    text-transform: none;
+}
+
+.block-newsletter #edit-newsletter-submit:hover,
+.block-newsletter #edit-newsletter-submit:focus {
+    background-color: #f48024;
+}
+
+.contact-list li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.contact-list a,
+#panel-fifth-wrapper a,
+#sitemap a {
+    border: 0 none !important;
+    color: #cbced2 !important;
+}
+
+.contact-list a:hover,
+#panel-fifth-wrapper a:hover,
+#sitemap a:hover {
+    color: #f48024 !important;
+}
+
+#panel-fourth-wrapper .container,
+#panel-fifth-wrapper .container {
+    border: 0;
+    padding-bottom: 0;
+}
+
+#panel-fifth-wrapper .container {
+    padding-top: 15px;
+}
+
+#panel-fifth-wrapper .container {
+    padding-top: 15px;
+}
+
+.panel-fifth-1.grid-4 {
+    width: 100%;
+}
+
+#panel-fifth-wrapper p {
+    margin: 5px 0;
+}
+
+ul.social-list li a {
+    background-image: url("/sites/all/themes/ansirh/images/icon-socials.png") !important;
+}
+
+#sitemap {
+    margin-top: 25px;
+}
+
+/* --- Home page --- */
+
+.front.fs-medium {
+    font-size: 1.2em;
+}
+
+#main-wrapper h2 a,
+.front #main-wrapper a,
+#main-wrapper .views-field-field-staff-photo a,
+#main-wrapper .views-field-field-image a,
+.page-node-393 #main-content .region-content .block a,
+.page-node-394 #main-content .region-content .block a,
+#main-wrapper a.linked-image  {
+    border-bottom: 0 none;
+}
+
+.front #header-wrapper,
+.front #menu-bar-wrapper,
+.front .menu.sf-menu.sf-style-university > li.active-trail > a,
+    /*
+    .menu.sf-menu.sf-style-university li a.active,
+    .menu.sf-menu.sf-style-university li a.active:active,
+    .menu.sf-menu.sf-style-university li a.active:focus,
+    .menu.sf-menu.sf-style-university li a.active:hover,
+    */
+.front .menu.sf-menu.sf-style-university > li.sfHover > a,
+.front .menu.sf-menu.sf-style-university > li > a:active,
+.front .menu.sf-menu.sf-style-university > li > a:focus,
+.front .menu.sf-menu.sf-style-university > li > a:hover {
+    background-color: #052049 !important;
+}
+
+.front #page-title,
+.news #page-title,
+.node-type-faculty-staff #page-title,
+.node-type-research-project #page-title,
+.node-type-research-study #page-title {
+    display: none;
+}
+
+.front #block-system-main {
+    display: none;
+}
+
+.front #main-content .region-content {
+    display: block;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+.region-content .block-content .view {
+    min-height: 200px;
+    position: relative;
+}
+
+.region-content .block-content .view.view-display-id-block_8 {
+    min-height: 0;
+}
+
+.region-content .block-content .view .view-footer {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    vertical-align: bottom;
+}
+
+.region-sidebar-second .view-footer,
+.region-sidebar-second .view-media-coverage .view-footer {
+    font-size: 0.85em;
+    padding-right: 0;
+    position: relative;
+}
+
+.block ul.menu li.active-trail > a,
+.block ul.menu li > a.active,
+.menu.sf-menu ul li a .sf-sub-indicator {
+    background-image: none !important;
+}
+
+/**
+ * Supported Views Formats
+ */
+
+/* content */
+
+.node-title {
+    margin-bottom: 15px;
+}
+
+/*.view-content p {
+    color: #666;
+    font-family: "open-sans",helvetica,sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.5;
+}*/
+
+.panel-2col-stacked .panel-col-first {
+    width: 100%;
+}
+
+/* --- Slideshow --- */
+
+
+#slideshow-wrapper .container.grid-24 {
+    width: 100%;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper {
+    background: transparent url("/sites/all/themes/tb_university/images/bg-button-search.png") repeat scroll 0 0;
+    bottom: 0;
+    color: #ffffff;
+    font-size: 14px;
+    left: 0;
+    padding: 15px 20px 10px;
+    width: 550px;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper {
+    bottom: 0;
+}
+
+.slideshow-group-fields-wrapper.narrow {
+    width: 350px;
+}
+
+.region-slideshow .views-slideshow-controls-bottom {
+    bottom: 0;
+    right: 15px;
+}
+
+.region-slideshow .views-slideshow-controls-bottom span {
+    background-image: url("/sites/all/themes/ansirh/images/sl-btn-direction.png");
+}
+
+.region-slideshow .slideshow-group-fields-wrapper {
+    margin-left: 10px;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper .views-field-title {
+    margin-bottom: 8px;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper .views-field-title a {
+    margin: 0 0 15px;
+    overflow: visible;
+    padding: 0;
+    text-shadow: none;
+    text-transform: none;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper .views-field-title a:hover {
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+.view-Slideshow .view-content p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.addthis_32x32_style .at4-icon,
+.addthis_32x32_white_style .at4-icon,
+.at-32x32 {
+    background-size: 1.5pc auto !important;
+    height: 1.5pc !important;
+    line-height: 1.5pc !important;
+}
+
+.atss a {
+    width: 2pc !important;
+}
+
+.atss a:hover {
+    width: 3pc !important;
+}
+
+/* home page research boxes */
+
+.front #panel-second-wrapper {
+    padding-top: 10px;
+}
+
+.view-features .views-row {
+    padding-bottom: 15px;
+}
+
+.cols-3 .grid.views-col.col-2 {
+    margin: 0 5%;
+}
+
+.cols-3 .views-col {
+    width: 30%;
+}
+
+#panel-second-wrapper .block .views-field-name {
+    margin: 0 0 5px;
+}
+
+#panel-second-wrapper .block .views-field-name a,
+.sidebar .block-title {
+    color: #9ba6b6;
+    font-family: Helvetica, Arial, "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+
+a:hover img {
+    opacity: 0.5;
+}
+
+#panel-second-wrapper .block .views-field-name a:hover {
+    color: #F48024;
+}
+
+.view-features .views-field-description p {
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0.5em 0 0.2em;
+}
+
+.view-features .views-field-name-1 {
+    padding-top: 5px;
+    text-align: right;
+}
+
+.read-more a {
+    background: rgba(0, 0, 0, 0) url("/sites/all/themes/tb_university/images/readon-bg.png") no-repeat scroll left 2px;
+    color: #666;
+    font-family: "open-sans",helvetica,sans-serif;
+    font-weight: 300;
+    padding-left: 16px;
+}
+
+.read-more a:hover {
+    background-image: url("/sites/all/themes/ansirh/images/readon-hover-bg.png");
+}
+
+.front #main-content #block-block-19 {
+    clear: both;
+    float: none;
+    padding-top: 2em;
+    width: 100%;
+}
+
+/* --- Home page media box --- */
+
+.front .region-content .view-content,
+.page-node-393 #main-content .region-content .block .view-content,
+.page-node-394 #main-content .region-content .block .view-content{
+    padding-bottom: 30px;
+}
+
+.front #main-content h2 {
+    color: #333;
+    font-size: 1.077em;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.region-content h2.block-title > a {
+    color: #333;
+    font-family: Helvetica, Arial, "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.front .view-media-coverage .views-row,
+.front .view-publications .views-row,
+.front .view-Articles .views-row,
+.page-node-393 #main-content .region-content .block .views-row,
+.page-node-394 #main-content .region-content .block .views-row {
+    display: block;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.front .view-publications .authors span::after,
+.page-node-393 .view-publications .authors span::after,
+.page-node-394 .view-publications .authors span::after {
+    content: ".";
+}
+
+.view-media-coverage .views-field-field-publication-date {
+    clear: both;
+    color: #666;
+    display: inline-block;
+    float: left;
+    min-width: 60px;
+}
+
+.front .view-media-coverage .views-field-field-publication-date {
+    display: block;
+    float: none;
+}
+
+.view-media-coverage .views-field-title {
+    display: inline-block;
+    float: left;
+    max-width: 85%;
+}
+
+.view-media-coverage .views-row-last,
+.view-publications .views-row-last {
+    margin-bottom: 25px;
+}
+
+.view-media-coverage .view-footer {
+    bottom: 0;
+    padding-right: 30px;
+    position: absolute;
+    text-align: right;
+}
+
+.front #main-content .region-content .block,
+.page-node-393 #main-content .region-content .block,
+.page-node-394 #main-content .region-content .block{
+    float: left;
+    margin-right: 4%;
+    width: 30%;
+}
+
+/* --- Home page publications box --- */
+
+.front #main-content .region-content #block-views-publications-block {
+    margin-right: 0;
+}
+
+/* publications pages */
+
+.node-type-publication h1#page-title {
+    display: none;
+}
+
+.node-type-publication .article h2.node-title {
+    color: #df721c;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
+.node-type-publication h3.field-label {
+    color: #9ba6b6;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.early-abortion-training-workbook.node-type-publication .article h2.node-title,
+.apc-toolkit.node-type-publication .article h2.node-title {
+    font-size: 2.33em;
+    line-height: 1.25;
+}
+
+.early-abortion-training-workbook .field-name-field-publication-type,
+.early-abortion-training-workbook .field-name-field-publication-source,
+.early-abortion-training-workbook .field-name-field-publication-date,
+.early-abortion-training-workbook .field-name-field-link,
+.early-abortion-training-workbook .field-name-field-publication-date,
+.early-abortion-training-workbook .field-name-field-description .field-label,
+.apc-toolkit .field-name-field-publication-type,
+.apc-toolkit .field-name-field-publication-source,
+.apc-toolkit .field-name-field-publication-date,
+.apc-toolkit .field-name-field-link,
+.apc-toolkit .field-name-field-publication-date,
+.apc-toolkit .field-name-field-description .field-label {
+    display: none;
+}
+
+
+/* staff-view */
+
+.list-with-subheads h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.page-about-faculty-and-staff .views-field-field-staff-photo {
+    float: left;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.list-with-subheads h3 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    margin-top: 30px;
+}
+
+.staff-title {
+    color: #506380;
+    font-size: 1.05em;
+    font-weight: bold;
+    margin-bottom: 0.75em;
+}
+
+#main-wrapper .staff-title a {
+    border-bottom: 0;
+    color: #506380;
+}
+
+.view-staff-member .inline div,
+.view-staff-member .inline {
+    display: inline;
+}
+
+.page-about-faculty-and-staff .list-with-subheads > .view-content  .views-row {
+    border-bottom: 1px solid #ddd;
+    clear: both;
+    display: block;
+    margin-bottom: 1.5em;
+    overflow: auto;
+    padding-bottom: 25px;
+}
+
+.page-about-faculty-and-staff .list-with-subheads > .view-content .views-row-last {
+    border-bottom: 0;
+}
+
+.page-about-faculty-and-staff .views-row p {
+    column-rule: #777;
+    display: inline;
+    line-height: 1.6;
+}
+
+.page-about-faculty-and-staff .region-content .block-content .view {
+    margin-bottom: 25px;
+    min-height: 0;
+}
+
+.faculty-and-staff .view-staff-member .read-more a {
+    background: none;
+}
+
+.faculty-and-staff .read-more span {
+    line-height: 1;
+}
+
+.links .item-list {
+    margin-bottom: 9px;
+}
+
+.links .item-list h3,
+.links .item-list div,
+.links .item-list li,
+.links .item-list ul,
+.links .item-list .views-row {
+    background-image: none;
+    clear: none;
+    display: inline;
+    font-size: 1em;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-with-subheads .links h3 {
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+.list-with-subheads h4 {
+    font-weight: normal;
+}
+
+.list-with-subheads .views-exposed-widgets {
+    margin-top: 14px;
+}
+
+.view-staff-member form .views-exposed-widget,
+.ansirh-research .view-research-related-content .views-exposed-widget {
+    display: inline-block;
+    width: 33%;
+}
+
+.list-with-subheads label {
+    color: #506380;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.list-with-subheads .form-item {
+    margin: 0;
+}
+
+.view-staff-member form .views-exposed-widget.views-submit-button,
+.view-staff-member form .views-exposed-widget.views-reset-button,
+.ansirh-research .view-research-related-content  form .views-exposed-widget.views-submit-button,
+.ansirh-research .view-research-related-content form .views-exposed-widget.views-reset-button {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    width: auto;
+}
+
+.list-with-subheads .views-exposed-widgets .views-widget {
+    padding-right: 20px;
+}
+
+.list-with-subheads .views-exposed-widget input,
+.list-with-subheads .views-exposed-widget select {
+    width: 100%;
+}
+
+.list-with-subheads .views-exposed-widget select {
+    color: #777;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+.not-front #main-content .links .item-list ul li,
+.not-front #main-content .links ul.item-list li {
+    background: none;
+    line-height: 1.4;
+    padding: 0 0 0 1px;
+}
+
+.links ul {
+    display: inline;
+}
+
+.links li::after {
+    color: #999;
+    content: " | ";
+    font-size: 1em;
+    margin-right: 1px;
+/*
+    margin-top: -1px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+*/
+}
+
+.links li:last-of-type::after {
+    content: "";
+}
+
+#main-wrapper .links .item-list li a {
+    background-image: none;
+    border-bottom: 0 none;
+    display: inline;
+    font-size: 0.9em;
+    padding: 0 2px 0 0;
+}
+
+.views-field-field-staff-photo img {
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+.views-field-field-short-version-of-bio .light {
+    margin-left: 15px;
+}
+
+/* staff-listing */
+
+.node-type-faculty-staff #main-wrapper .container {
+    padding-top: 21px;
+}
+
+.node-type-faculty-staff #main-title-outer {
+    display: none;
+}
+
+.view-header h2,
+.views-field-title h2,
+.article h2.node-title {
+    color: #F48024;
+    font-family: "open-sans",helvetica,sans-serif;
+    font-weight: 300;
+}
+
+.node-type-faculty-staff.not-front #main-content .view-staff-member li {
+    background: none;
+    margin-top: 0;
+}
+
+.view-content .views-field-field-staff-position  p {
+    color: #506380;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.view-professor .item-list li img {
+    margin-right: 25px;
+}
+
+.staff-research .views-row {
+    margin-bottom: 15px;
+}
+
+.staff-research p {
+    display: inline;
+}
+
+@media screen and (min-width: 1000px) { /* narrowing column width when quicktabs are empty and screen width is large */
+    .no-sidebars .views-field.views-field-field-staff-bio,
+    .no-sidebars .view-research-related-content {
+        max-width: 80%;
+    }
+}
+
+/* job openings */
+
+.page-about-job-openings .list-with-subheads .views-row h4 {
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+}
+
+.page-about-job-openings .list-with-subheads .views-row {
+    margin-bottom: 3em;
+}
+
+.field-name-field-staff-category {
+    color: #506380;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.node-type-job-opening .field-name-field-staff-category li,
+.node-type-job-opening .field-name-field-staff-category ul {
+    background: none;
+    border: 0;
+    line-height: 1.5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.node-type-job-opening .region-content .block-content .view .view-footer {
+    left: 0;
+}
+
+.caps-title .views-label,
+.node-type-job-opening .field-name-field-staff-category .field-label,
+.node-type-job-opening .views-field-nothing .views-label {
+    color: #f48024;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.node-type-job-opening.not-front #main-content .field-name-field-staff-category li,
+.node-type-job-opening.not-front #main-content .view-staff-member li {
+    background: none;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.job-openings .views-row + em {
+    font-style: normal !important;
+}
+
+.job-openings .views-row + em em {
+    font-style: italic !important;
+}
+
+/* --- research pages --- */
+
+.research-list .views-field-title > a {
+    font-weight: 700;
+}
+
+.research-list .views-field-field-key-contact-person {
+    color: #506380;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.view-research-related-content.contact .views-row-2 {
+    margin-top: .75em;
+}
+
+
+.page-research h1#page-title,
+.node-type-abortion-portrayal h1#page-title {
+    display: none;
+}
+
+.page-research h3 {
+    display: block;
+    font-size: 1.5em;
+    margin: 1.5em 0 0.75em;
+}
+
+.page-research.page-research-ansirh-research h1#page-title {
+    display: block;
+}
+
+.page-research .region-content .block-content .view {
+    min-height: 0;
+}
+
+.ansirh-research .view-research-related-content .views-row {
+    background: url("/sites/all/themes/ansirh/images/bullet_orange.png") no-repeat scroll 0 9px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding-left: 11px;
+}
+
+.node-type-research-project #slideshow-wrapper .container.grid-24,
+.page-ansirh-publications #slideshow-wrapper .container.grid-24,
+.node-type-page #slideshow-wrapper .container.grid-24 {
+    width: 100%;
+}
+
+.node-type-page.front #slideshow-wrapper .container.grid-24 {
+    width: 1080px;
+}
+
+#slideshow-wrapper .view-content .views-row {
+    position: relative;
+}
+
+.views-field.views-field-field-banner-text.container {
+    border-left: 30px solid transparent;
+}
+
+.views-field-field-banner-text .field-content {
+    background-color: #506380;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    opacity: 0.8;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.addthis-smartlayers #at4-share {
+    margin-top: 150px;
+}
+
+.front .addthis-smartlayers #at4-share,
+.node-type-faculty-staff .addthis-smartlayers #at4-share {
+    margin-top: 0;
+}
+
+.sidebar .item-list ul li,
+.sidebar .item-list ol li {
+    color: #999;
+    font-size: .9em;
+}
+
+.sidebar .item-list p {
+    display: inline;
+}
+
+.sidebar .item-list ul li {
+    background: url("/sites/all/themes/tb_university/images/arrow-2.png") no-repeat 0 6px;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 0;
+}
+
+#main-wrapper .sidebar .item-list ul li a,
+#main-wrapper .sidebar .item-list ul li a:hover {
+    background: none;
+    color: #506380;
+    border-bottom: 0;
+    padding-left: 0;
+}
+
+.view-display-id-embed_1 div {
+    display: inline;
+}
+
+.view-display-id-embed_1 span::after {
+    content: ",";
+}
+
+.view-display-id-embed_1 .views-row-last span::after {
+    content: ".";
+}
+
+#sidebar-second-wrapper .block-quicktabs {
+    margin-top: -8px;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li {
+    background: none;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 5px;
+    white-space: nowrap;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li.active,
+.quicktabs-style-university ul.quicktabs-tabs li.active:hover {
+    background: url("/sites/all/themes/ansirh/images/arrow-tab.png") no-repeat center bottom;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li:hover {
+    background: url("/sites/all/themes/ansirh/images/arrow-tab-over.png") no-repeat center bottom;
+}
+
+#main-wrapper .quicktabs-style-university ul.quicktabs-tabs li a {
+    background: none;
+    border-bottom: 0;
+    color: #9ba6b6;
+    float: left;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+#main-wrapper .quicktabs-style-university ul.quicktabs-tabs li a:hover {
+    background: #F48024 none repeat scroll 0 0;
+    color: #fff !important;
+    padding: 5px 20px;
+}
+
+#main-wrapper .quicktabs-style-university ul.quicktabs-tabs li.active a {
+    background: #052049 none repeat scroll 0 0;
+    border-bottom: 0;
+    color: #fff;
+}
+
+.quicktabs_main {
+    padding-top: 1em;
+}
+
+.view-researcher .attachment .views-field-nothing {
+    border-bottom: 1px solid #efece1;
+    display: block;
+    overflow: auto;
+    padding-bottom: 1.1em;
+}
+
+.view-researcher .attachment .views-field-nothing.hide {
+    border-bottom: 0;
+    display: inline;
+}
+
+#sidebar-second-wrapper .view-publications .pager-previous.first::before,
+#sidebar-second-wrapper .view-media-coverage .pager-previous.first::before {
+    content: "Use pager to view more:";
+    padding-right: 12px;
+}
+
+#main-wrapper #sidebar-second-wrapper .item-list .pager .pager-current {
+    padding-left: 0;
+    padding-right: 6px;
+}
+
+#main-wrapper #sidebar-second-wrapper .item-list .pager .pager-previous a {
+    padding-right: 6px;
+}
+
+#sidebar-second-wrapper .view-publications .item-list ul.pager,
+#sidebar-second-wrapper .view-media-coverage .item-list ul.pager {
+    text-align: left;
+}
+
+.view-researcher .views-row .views-field-nothing,
+.co-investigator .views-row .views-field-nothing {
+    border-top: 1px solid #efece1;
+    display: block;
+    margin-top: 1.1em;
+    overflow: auto;
+    padding-top: 1em;
+}
+
+.view-researcher .views-row .views-field-nothing.hide {
+    padding-top: 0;
+}
+
+.view-researcher .views-row-1 .views-field-nothing,
+.view-researcher .views-row-last,
+.view-researcher .views-row .views-field-nothing.hide {
+    border-top: 0 none;
+    margin-top: 0;
+}
+
+.view-researcher .view-display-id-attachment_1 .views-row .views-field-nothing {
+    border-top: 0 none;
+    padding-top: 0;
+}
+
+.view-research-related-content .view-content .views-row-1 .no-pi,
+.view-research-related-content .view-content .views-row-1 .no-ci {
+    margin-top: -8px;
+}
+
+/*
+.contraceptive-care-community-health-settings #block-quicktabs-quicktabs--2 .block-content > .view-research-related-content > .view-content .views-row-1 {
+    border-top: 1px solid #efece1;
+    margin-top: 1.1em;
+}
+
+.contraceptive-care-community-health-settings .block-content > .view-research-related-content > .view-content .views-row-1 .views-field-field-staff-position::after {
+    content: "Co-Investigator";
+    display: block;
+    color: #f48024;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-top: 5px;}
+*/
+
+.page-node-127 .view-researcher .attachment .views-field-nothing,
+.page-node-142 .view-researcher .attachment .views-field-nothing,
+.page-node-215 .view-researcher .attachment .views-field-nothing,
+.page-node-364 .view-researcher .attachment .views-field-nothing,
+.page-node-386 .view-researcher .attachment .co-investigator .views-field-nothing { /* correcting for when PI is also first staff listing, to remove double line */
+    border-bottom: 0 none;
+    padding-bottom: 0;
+}
+
+.views-field-field-principal-investigator,
+.views-field-field-co-investigator {
+    color: #F48024;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.view-researcher img {
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+    padding: 2px;
+    width: 30%;
+}
+
+#main-wrapper .view-researcher a {
+    border-bottom: 0 none;
+    color: #506380;
+    font-weight: bold;
+}
+
+/*
+.views-field-field-staff-position {
+    font-size: 0.9em;
+}
+*/
+
+.sidebar .item-list ul li {
+    margin-bottom: 8px;
+}
+
+.node-title {
+    margin-bottom: 20px;
+}
+
+.page-research .node-title {
+    margin-bottom: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.abortion-onscreen .view-id-Slideshow {
+    display: none;
+}
+
+.research-block-main {
+    /*
+        border-top: 1px solid #efece1;
+    */
+    margin-top: 1.75em;
+}
+
+.research-block-main .views-more-link {
+    color: #F48024;
+    display: inline;
+    font-size: 0.8em;
+}
+
+.page-node-142 .views-field-field-credit .field-content span {
+    display: none;
+}
+
+
+/* --- publications search --- */
+
+.page-ansirh-publications .views-field-field-banner-text .field-content {
+    opacity: 0.6;
+}
+
+.page-ansirh-publications #sidebar-first-wrapper {
+    margin-right: 5%;
+}
+
+/*.page-ansirh-publications select option {
+    font-size: 0.9em;
+}
+
+.page-ansirh-publications #main-content {
+    max-width: 70%;
+}
+
+
+.page-ansirh-publications #main-wrapper .container > .grid::before {
+    content: "ANSIRH publications";
+    display: block;color: #f48024;
+    font-family: "open-sans",helvetica,sans-serif;
+    font-size: 2.333em;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: -2px;
+    padding-left: 10px;
+}
+*/
+
+.author-list {
+    display: inline;
+}
+
+.view-publications .view-content h3:first-child {
+    margin-top: 0;
+}
+
+.page-ansirh-publications .view-publications {
+    line-height: 1.6;
+}
+
+.page-ansirh-publications .block-content > .view-publications > .view-content > .views-row,
+.page-ansirh-resources .block-content > .view-resources > .view-content > .views-row,
+.block-content .research-list > .view-content > .views-row {
+    border-bottom: 1px solid #efece1;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.page-ansirh-publications .block-content > .view-publications > .view-content > .views-row-last,
+.page-ansirh-resources .block-content > .view-resources .view-content .views-row-last,
+.block-content .research-list > .view-content > .views-row-last {
+    border-bottom: 0;
+}
+
+/*
+.page-ansirh-publications .sidebar .block-title,
+.page-publications-journals .sidebar .block-title,
+*/
+.ansirh-in-the-news .sidebar .block-title {
+    color: #506380;
+}
+
+
+.sidebar .views-exposed-form label,
+.abortion-onscreen-database label,
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-min::before,
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-max::before {
+    color: #506380;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.sidebar .views-exposed-form .form-item {
+    margin-top: 0;
+}
+
+.sidebar select,
+.sidebar .form-select,
+.sidebar input {
+    color: #666;
+    font-family: "open sans",helvetica,sans-serif;
+    font-size: 0.8em;
+    padding: 1px 4px;
+    width: 100%;
+}
+
+.sidebar .views-widget {
+    margin-bottom: 1em;
+    margin-top: 1px;
+}
+
+.sidebar .container-inline-date {
+    clear: both;
+    float: none;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar .container-inline-date .form-item,
+.sidebar.container-inline-date .form-item.form-type-date-select,
+.sidebar .container-inline-date .date-padding,
+.sidebar .container-inline-date .form-item .form-item {
+    float: none;
+    width: 100%;
+}
+
+.sidebar span.button input.form-submit {
+    background-color: #052049;
+    display: inline-block;
+    float: left;
+    font-family: "open sans",helvetica,sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-right: 10px;
+    padding: 4px 6px;
+    width: auto;
+}
+
+.sidebar .views-exposed-form .form-text {
+    line-height: 1.5;
+}
+
+.sidebar .views-exposed-form .form-text.form-autocomplete {
+    background-position: 98% 4px;
+    line-height: 1;
+    padding: 5px 10px 5px;
+}
+
+.sidebar #autocomplete ul,
+.sidebar #autocomplete li {
+    background-color: #fff;
+    color: #666;
+    font-family: "open sans",helvetica,sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.sidebar #autocomplete li {
+    line-height: 1;
+    margin: 0;
+    padding: 5px;
+}
+
+.sidebar #autocomplete li:hover {
+    background-color: #F48024;
+}
+
+.sidebar .views-submit-button,
+.sidebar .views-reset-button {
+    margin-top: 20px;
+}
+
+
+
+/* books page */
+
+.books .view-publications .views-field-field-image img {
+    border: 1px solid #ddd;
+}
+
+.books .views-field-field-publication-source {
+    color: #777;
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.books #main-content .grid-inner .grid-inner {
+    padding: 20px 20px 20px 0;
+}
+
+#main-wrapper .read-more a {
+    border-bottom: 0 none;
+}
+
+.books .region-sidebar-second .view-footer {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+
+#article-177 img,
+#article-178 img,
+#article-179 img {
+    float: right;
+    margin: 5px 15px 10px 20px;
+    width: 60%;
+}
+
+.emphasis1 {
+    font-weight: bold;
+}
+.emphasis1, .emphasis2 {
+    color: #F48024;
+}
+
+.news ul,
+.node-research-study ul,
+.sidebar .normal ul {
+    margin-left: 0;
+}
+
+.news #main-content ul li,
+.research-block-main ul li,
+.node-research-study ul li,
+.sidebar .normal ul li {
+    background: url("/sites/all/themes/ansirh/images/bullet_orange.png") no-repeat scroll 0 9px;
+    list-style: outside none none;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 11px;
+}
+
+.news #main-content ul li li,
+.research-block-main ul li li,
+.node-research-study ul li li,
+.sidebar .normal ul li li {
+    background: url("/sites/all/themes/ansirh/images/bullet_blue.png") no-repeat scroll 0 9px;
+    list-style: outside none none;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 11px;
+}
+
+.research-block-main ul li a {
+    background: none;
+    padding-left: 0;
+}
+
+.news .tight > li,
+.item-list .tight > li {
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.not-front #main-content ul.tight > li {
+    margin: 0;
+}
+
+.item-list > h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+ul.quicktabs-tabs li,
+ul.quicktabs-tabs li:hover {
+    background-image: none;
+    margin: 0;
+    /*
+        max-width: 20%;
+    */
+}
+
+#block-quicktabs-quicktabs--2 ul.quicktabs-tabs li:hover {
+    margin-bottom: 8px;
+}
+
+.restrictions ul.quicktabs-tabs {
+    padding: 0;
+    width: 33%;
+    z-index: 2;
+}
+
+.restrictions .quicktabs_main {
+    background: #f4f7f7 none repeat scroll 0 0;
+    border: 1px solid #efece1;
+    min-height: 250px;
+    padding-left: 15px;
+    width: 63%;
+}
+
+.evaluation-abortion-restrictions-project .research-block-main {
+    border-top: 1px solid #efece1;
+}
+
+.not-front #main-content .research-block-main .restrictions li {
+    background-image: none;
+    margin: 0;
+}
+
+#main-wrapper .restrictions ul.quicktabs-tabs li a,
+#main-wrapper .restrictions ul.quicktabs-tabs li a:hover {
+    background-image: none;
+    border-bottom: 0 none;
+    padding-right: 15px;
+}
+
+.restrictions ul.quicktabs-tabs li.active {
+    background-color: #f4f7f7 !important;
+    border: 1px solid #efece1;
+    border-right: 0 !important;
+    margin-bottom: 2px;
+    padding-top: 3px;
+}
+
+.restrictions ul.quicktabs-tabs li:hover {
+    margin-right: -1px;
+}
+
+.restrictions .quicktabs_main .quicktabs-views-group {
+    background: url("/sites/all/themes/ansirh/images/bullet_orange.png") no-repeat scroll 0 9px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+}
+
+.abortion-restrictions .view-header h3 {
+    margin-bottom: .1em;
+}
+
+.abortion-restrictions .view-header p.description {
+    color: #999;
+    font-size: .9em;
+    margin-top: 0;
+}
+
+.abortion-prenatal-study-la-md #slideshow-wrapper .view-content .views-row.views-row-2 {
+    display: none;
+}
+
+
+
+/* journals page */
+
+.view-publications .views-field-field-logo {
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.view-publications .views-row,
+.view-resources .views-row,
+.sidebar .resource-list li {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.page-publications-journals .view-publications h3,
+.page-resources-issue-briefs .view-resources h3,
+.page-publications-issue-briefs .view-publications h3,
+.page-publications-presentations .view-publications h2,
+.ansirh-in-the-news .view-publications h3 {
+    border-bottom: 1px solid #F48024;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    padding-bottom: 4px;
+}
+
+.page-publications-journals .view-publications .views-field-nothing-1 {
+    padding-left: 55px;
+}
+
+.ansirh-in-the-news .views-field-nothing p {
+    display: inline;
+}
+
+#main-wrapper .views-field-field-logo a {
+    border-bottom: 0 none;
+}
+
+#block-views-exp-publications-page-4--2 {
+    margin-bottom: 50px;
+}
+
+/* issue briefs page */
+
+.page-publications-issue-briefs .views-field-field-description {
+    color: #777;
+    display: block;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.page-resources-issue-briefs .view-resources h3:last-of-type,
+.page-resources-issue-briefs .view-resources h3:last-of-type + .views-row-last,
+.page-publications-issue-briefs .view-publications h3:last-of-type,
+.page-publications-issue-briefs .view-publications h3:last-of-type + .views-row-last,
+.page-publications-issue-briefs .views-row.Turnaway,
+.issue-briefs .views-row.Turnaway { /* hide turnaway per Rana */
+    display: none;
+}
+
+.page-publications-issue-briefs .view-publications .links h3:last-of-type,
+.page-resources-issue-briefs .view-resources .links h3:last-of-type {
+    display: inline;
+    font-size: 1em;
+    border-bottom: 0;
+    margin-right: 7px;
+}
+
+/* infographics page */
+
+.infographics .view-publications .views-field-field-image,
+.infographics .view-resources .views-field-field-image {
+    margin-bottom: 15px;
+}
+
+.infographics .view-id-resources .grid-inner {
+    max-width: 90%;
+}
+
+.infographics .view-id-resources .grid-inner img {
+    width: 100%;
+}
+
+/* resources pages */
+
+.page-ansirh-resources .region-content .block-content .view.view-resources .view-footer {
+    position: relative;
+}
+
+.page-ansirh-resources #main-content .view-footer h3 a {
+    border-bottom-color: #f48024;
+    color: #f48024;
+}
+
+.page-ansirh-resources #main-content .view-footer h3 a:hover {
+    border-bottom-color: #215281;
+    color: #215281;
+}
+
+.explained-abortion-research-policy .views-field.views-field-field-principal-investigator {
+    display: none !important;
+}
+
+.explained-abortion-research-policy .view-display-id-attachment_3 {
+    margin-bottom: .6em;
+}
+
+/* videos page */
+
+.page-resources-videos h2 {
+    color: #215281;
+}
+
+.views-columns-2 .views-column {
+    float: left;
+    margin-right: 6%;
+    width: 47%;
+}
+
+.views-columns-2 .views-column-last {
+    margin-right: 0;
+}
+
+.videos .icon {
+    height: 198px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.videos .colorbox-load img {
+    margin-top: -33px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videos .node-1307 .icon,
+.videos .node-3021 .icon {
+    display: none;
+}
+
+.embedded-video .player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embedded-video .player iframe,
+.embedded-video .player object,
+.embedded-video .player embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.node-type-publication .field-type-video-embed-field a {
+    border-bottom: 0 none !important;
+    display: block;
+    max-height: 280px !important;
+    overflow: hidden;
+}
+
+.node-type-publication .field-type-video-embed-field img {
+    margin-top: -40px;
+}
+
+.field-name-field-file-for-admin-use {
+    display: none;
+}
+
+
+/* posters page */
+
+#main-content .grid-inner .grid.col-first .grid-inner {
+    padding-left: 0;
+}
+
+.page-publications-presentations .attachment-before .views-field-nothing {
+    display: block;
+    margin-top: 10px;
+    max-width: 340px;
+}
+
+.page-publications-presentations .views-field-nothing-1 h4,
+.page-publications-presentations .views-field-nothing h4 {
+    color: #052049;
+    display: inline;
+    font-weight: normal;
+    line-height: 1.35;
+    margin-top: 5px;
+}
+
+.page-publications-presentations #main-wrapper .attachment-before .views-field-nothing h4 a {
+    border-bottom: 0;
+}
+
+.page-publications-presentations .views-field-nothing-1 .field-content > div,
+.page-publications-presentations .views-field-nothing .field-content > div {
+    color: #777;
+    display: inline;
+    font-size: 0.9em;
+}
+
+.page-publications-presentations .col-last .grid-inner {
+    float: right;
+}
+
+#main-content .grid-inner .grid.col-last .grid-inner {
+    padding-right: 0;
+}
+
+/*.page-publications-presentations .view-content > h3:first-child + .views-row-1,
+.page-publications-presentations .view-content > h3:first-child + .views-row-1 + .views-row-2 {
+    display: none;
+}
+
+.presentations .view-publications .view-content > h3:first-child {
+    display: none;
+}*/
+
+.ui-widget {
+    font-family: "open sans",helvetica,sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.ui-accordion .ui-accordion-content {
+    border: 0;
+    overflow: visible;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background: #fff;
+    background-image: none;
+    border: 0;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    color: #F48024;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+    left: -5px;
+}
+
+.ui-accordion-icons .ui-accordion-header a {
+    padding-left: .8em;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+
+#main-wrapper .views-accordion-header a {
+    border-bottom: 0 none;
+    color: #F48024;
+    font-family: "open sans",helvetica,sans-serif;
+    font-weight: 300;
+}
+
+/* job listings */
+
+.page-about-job-openings .view-Articles .views-row-last {
+    display: none;
+}
+
+.job-openings .views-field-body-1 p {
+    display: inline;
+}
+
+/* history */
+
+.page-about-history .date-display-single,
+.history-test .date-display-single {
+    color: #F48024;
+    display: block;
+    font-family: "open sans",helvetica,sans-serif;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.page-about-history .views-field-title,
+.history-test .views-field-title {
+    color: #052049;
+    font-size: 1.3em;
+    margin: -5px 0 10px ;
+}
+
+.history-test .views-field-title {
+    margin-top: -5px;
+}
+
+/*
+.page-about-history .page-view .grid-inner,
+.page-about-history .page-view .view-content {
+    width: 400px;
+}
+
+*/
+.page-about-history .ui-state-default,
+.page-about-history .ui-state-active,
+.page-about-history .ui-widget-content
+.page-about-history .ui-state-active,
+.page-about-history .ui-widget-header .ui-state-active {
+    background: none;
+    border: 0;
+}
+
+.page-about-history .page-view .ui-icon {
+    display: none;
+}
+
+.page-about-history .ui-accordion-icons, .page-about-history .ui-accordion-header a {
+    padding-left: 0;
+}
+
+/*.page-about-history #main-wrapper .views-accordion-header > a {
+    color: #666;
+}*/
+
+/*.page-about-history .ui-accordion .ui-accordion-header a,
+.page-about-history .ui-accordion .ui-accordion-content {
+    border: 0;
+    font-family: 'open sans', helvetica, arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding: 25px 0;
+}*/
+
+.page-about-history .ui-accordion .ui-accordion-header a p {
+    display: inline;
+}
+
+.page-about-history #main-wrapper .views-accordion-header > a:hover {
+    color: #666 !important;
+    cursor: default;
+}
+
+.history-timeline .views-more-link:hover {
+    color: #F48024;
+    cursor: pointer;
+}
+
+.page-about-history #main-wrapper .views-accordion-header > a:hover img {
+    opacity: 1.0;
+}
+
+.page-about-history .ui-accordion-icons .ui-accordion-header a {
+    padding-left: 0;
+}
+
+.page-about-history .year {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.page-about-history .history-item {
+    min-height: 170px;
+}
+
+.page-about-history .history-left {
+    float: left;
+    margin-right: 3%;
+    width: 40%;
+}
+
+.page-about-history .history-right {
+    float: left;
+    width: 56%;
+}
+
+.page-about-history #main-wrapper .views-accordion-header > a p,
+.page-about-history .view-history-timeline .views-field-body-1 {
+    color: #777;
+}
+
+.history-right p,
+.history-right p {
+    display: inline;
+}
+
+.history-right .views-more-link,
+.history-right .views-more-link {
+    margin-left: 0;
+}
+
+.page-about-history .view-history-timeline .views-row {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.page-about-history .view-history-timeline .views-row-last {
+    border-bottom: 0;
+}
+
+.page-about-history .view-history-timeline .views-field-body-1 {
+    margin-bottom: 30px;
+}
+
+.page-about-history a:hover img {
+    opacity: 1.0;
+}
+
+.page-about-history .views-accordion-header > a.views-more-link.read-more:hover {
+    cursor: default;
+}
+
+.page-about-history .view-history-timeline .views-more-link.read-more:hover {
+    color: #506380;
+    cursor: pointer;
+}
+
+.page-about-history .view-history-timeline .ui-state-active .views-more-link,
+.page-about-history .view-history-timeline .views-more-link.read-less {
+    display: none;
+}
+
+.page-about-history .view-history-timeline .ui-state-active .views-more-link.read-less {
+    display: inline;
+}
+
+.view-history-timeline .views-field-field-credit {
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.view-history-timeline .credits {
+    color: #777;
+    text-align: right;
+}
+
+.page-about-history .year-2009 .date-display-single::after {
+    content: '-2012';
+}
+
+.page-about-history .views-row .ui-state-default {
+    font-weight: 300;
+}
+
+.ui-accordion .history-right a {
+    display: inline;
+    padding: 0;
+}
+
+.page-about-history .year-2014 .views-more-link.read-more {
+    display: none;
+}
+
+/* conference room */
+
+.page-photos .views-field-field-label {
+    display: inline-block;
+    float: left;
+}
+
+.page-photos .views-field-field-label div::after {
+    color: #999;
+    content: " | ";
+    font-size: 0.9em;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+
+/* awards */
+
+.region-content .block-content .view-awards {
+    min-height: 0;
+}
+
+.awards-block-main {
+    background-color: #e6e9ed;
+    border: 1px solid #9ba6b6;
+    height: auto;
+    margin-top: 2em;
+    padding: 0 1.5em .75em;
+}
+
+.awards-block-main .block-title {
+    color: #506380;
+    font-size: 1.3em;
+    margin-bottom: 0.75em;
+}
+
+.view-awards .views-row {
+    background: rgba(0, 0, 0, 0) url("/sites/all/themes/ansirh/images/bullet_blue.png") no-repeat scroll 0 9px;
+    margin-bottom: 1em;
+    padding-left: 12px;
+}
+
+
+/*  conference room photos */
+
+.page-node-202 #colorbox {
+    background-image: none;
+    padding-right: 20px;
+}
+
+.page-node-202 #cboxWrapper,
+.page-node-202 #cboxLoadedContent {
+    padding: 10px 10px 0;
+}
+
+.page-node-202 #cboxContent {
+    margin-bottom: 0;
+}
+
+.page-node-270 .views-slideshow-controls-text-pause {
+    display: none;
+}
+
+.page-node-270 .views-slideshow-controls-text-next {
+    margin-left: 15px;
+}
+
+.page-node-270 .views-slideshow-controls-text {
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+}
+
+/*
+#pre-photos + #photos {
+    display: none;
+}
+
+*/
+.page-node-270  .view-footer > p {
+    font-size: 0.8em;
+    line-height: 1;
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+#cboxLoadedContent {
+    padding: 10px 20px 30px 15px;
+}
+
+
+.page-conference-photos #header-wrapper,
+.page-conference-photos #menu-bar-wrapper,
+.page-conference-photos #slideshow-wrapper,
+.page-conference-photos #panel-fourth-wrapper,
+.page-conference-photos #panel-fifth-wrapper,
+.page-conference-photos #at4-share,
+.page-conference-photos .at4-share-outer-right
+.page-conference-photos #skip-link {
+    display: none;
+}
+
+.page-conference-photos .region-content .block-content .view .view-footer {
+    display: block;
+    float: none;
+    position: relative;
+}
+
+.page-conference-photos .container,
+.page-conference-photos:hover .container,
+.page-conference-photos .grid-24,
+.page-conference-photos #main-wrapper {
+    max-width: 800px;
+    width: auto;
+}
+
+.page-conference-photos #main-content .grid-inner {
+    padding: 0;
+}
+
+/* research project table */
+
+.research-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 100%;
+    margin: 2em 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.research-table tr:hover td {
+    background-color: #fef2e9;
+}
+
+.research-table td {
+    background-color: #e6e9ed;
+    border: 2px solid #ffffff;
+    border-width: 0 2px 2px 0;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.research-table tr:last-child td {
+    border-width: 0 2px 0 0;
+}
+
+.research-table tr td:last-child {
+    border-width: 0 0 2px;
+}
+
+.research-table tr:last-child td:last-child {
+    border-width: 0 0px 0px 0px;
+}
+
+.research-table tr:first-child td {
+    background-color: #9ba6b6;
+    border-width: 0 0 2px 2px;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.research-table tr:first-child td:first-child {
+    border-width: 0 0 2px;
+}
+
+.research-table tr:first-child td:last-child {
+    border-width: 0 0 2px 2px;
+    font-size: 1.3em;
+}
+
+.research-table p {
+    margin: 0;
+    padding: 0;
+}
+
+.table-note {
+    font-size: 0.8em;
+}
+
+.region-content #block-views-slideshow-block-5 .block-content .view {
+    min-height: 0;
+}
+
+/* pages without banner credits */
+
+.page-publications-presentations #block-views-slideshow-block-5,
+.apc-toolkit #block-views-slideshow-block-5 {
+    display: none;
+}
+
+
+/* quick fixes for pages with duplicate banners */
+
+.abortion-facility-standards-initiative .view-Slideshow .view-content .views-row-2,
+.abortion-restrictions .view-Slideshow .view-content .views-row-2,
+.early-abortion-training-workbook #slideshow-wrapper .views-row-1,
+.apc-toolkit #slideshow-wrapper .views-row-1 {
+    display: none;
+}
+
+/* training material pages */
+
+.early-abortion-training-workbook h1#page-title,
+.apc-toolkit h1#page-title {
+    display: none;
+}
+
+.apc-toolkit .section .field-item p {
+    margin-bottom: 0.5em;
+}
+
+.apc-toolkit ol {
+    margin-bottom: 0;
+}
+
+.apc-toolkit ol + p {
+    margin-left: 1em;
+    margin-top: .5em;
+}
+
+.apc-toolkit .article ul > li {
+    margin-top: 15px;
+}
+
+.apc-toolkit blockquote {
+    font-size: 1em;
+    font-style: normal;
+    padding-left: 1.5em;
+}
+
+/* media pages */
+
+.author-list .views-field-title {
+    margin-right: 5px;
+}
+
+.ansirh-in-the-news .views-field-nothing,
+.ansirh-in-the-media .views-field-nothing {
+    min-height: 40px;
+}
+
+.ansirh-in-the-news .region-slideshow > .view-content,
+.ansirh-in-the-news #block-block-17,
+.ansirh-in-the-news #block-views-articles-block-2--2,
+.ANSIRH-news #block-views-articles-block-2--2 {
+    display: none;
+}
+
+.media-inquiries #page-title {
+    display: block;
+}
+
+/* what's new */
+
+.ANSIRH-news h1#page-title {
+    display: none;
+}
+
+.ANSIRH-news .view-Articles .views-row {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.8em;
+    margin-top: 1em;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+.ANSIRH-news .view-Articles .views-row-last {
+    border-bottom: 0;
+}
+
+.ANSIRH-news .view-Articles .views-field-field-image {
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 20px;
+    margin-top: 6px;
+    padding: 4px;
+}
+
+.ANSIRH-news #main-wrapper h3 {
+    margin-top: 0;
+}
+
+.ANSIRH-news #main-wrapper h3 a {
+    border-bottom: 0 none;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.ANSIRH-news .view-Articles .field-content p {
+    display: inline;
+}
+
+.ANSIRH-news .view-Articles .read-more > a {
+    background-position: 0 2px;
+    float: right;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+.ANSIRH-news .view-media-coverage .view-footer {
+    position: relative;
+    text-align: left;
+}
+
+.news .article .field-type-image img {
+    box-shadow: 0 0 0;
+    margin: 5px 0 15px 15px;
+}
+
+.news .notes {
+    margin-top: 40px;
+}
+
+.news .align-right,
+.news .align-left {
+    border: 1px solid #ddd;
+    margin: 5px 0 15px 25px;
+    max-width: 40% !important;
+    padding: 6px;
+}
+
+.news .align-right.large,
+.news .align-left.large {
+    max-width: 50% !important;
+}
+
+.news .align-left {
+    margin: 5px 25px 15px  0;
+}
+
+.news .align-right img,
+.news .align-left img {
+    width: 100%;
+}
+
+.news .field-name-body p.credits {
+    color: #999;
+    font-size: 60%;
+    line-height: 1.4;
+    margin: 4px 0 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.news .field-name-body .caption {
+    padding-bottom: 0;
+}
+
+/* twitter block */
+
+.front #main-content .grid-inner {
+    padding: 0 10px;
+}
+
+.front .view-media-coverage .views-field-title {
+    max-width: 100%;
+}
+
+.front #main-content .region-content #block-block-18.block {
+    margin-right: 0;
+}
+
+.front #main-content .region-content #block-views-media-coverage-block.block {
+    margin-right: 5.5%;
+}
+
+.front #main-content .region-content #block-block-18.block {
+    clear: none;
+    float: right;
+    margin-right: 0;
+    text-align: right;
+}
+
+.front #block-views-slideshow-block-5 {
+    display: none;
+}
+
+.front #main-content .twitter h2 {
+    color: #215281;
+    font-family: Helvetica,Arial,"Open Sans",sans-serif;
+    font-weight: bold;
+    padding-left: 17px;
+    text-align: left;
+}
+
+a[href="/news/women-are-certain-about-their-decision-have-abortion"] img {
+    opacity: .8;
+}
+
+/* print-friendly page */
+
+.print-body {
+    padding: 0 60px;
+}
+
+.print-logo img {
+    width: 400px;
+}
+
+.print-content {
+    clear: both;
+    font-size: 10pt;
+    width: 7in;
+}
+
+.print-content .view-research-related-content .views-row-1::before,
+.print-content .view-publications ul::before,
+.print-content .view-media-coverage ul::before,
+.print-content .view-awards ul::before {
+    color: #F48024;
+    content: "Research projects and studies";
+    display: block;
+    font-size: 16pt;
+    margin: 13pt 0 9px;
+}
+
+.print-content .view-publications ul::before {
+    content: "Recent publications";
+    padding-top: 3px;
+}
+
+.print-content .view-media-coverage ul::before {
+    content: "Recent media coverage";
+    margin-top: 15px;
+}
+
+.print-content .view-awards ul::before {
+    content: "Recent awards";
+    margin-top: 0;
+}
+
+.print-content .view-publications li.views-row,
+.print-content .view-media-coverage li.views-row,
+.print-content .view-awards li.views-row {
+    border: 0;
+    margin: 0 0 0 13px;
+}
+
+.print-content .view-research-related-content a {
+    color: #F48024;
+}
+
+.print-content .view-professor .item-list ul li {
+    border-bottom: 0;
+}
+
+.print-content .item-list ul li {
+    list-style: square outside;
+    margin: 12px 0 0 0;
+    padding-left: 0;
+}
+
+.print-content .item-list ul li a,
+.print-content .item-list ul li a:hover,
+.print-content .item-list ul li a:active,
+.print-content .item-list ul li a:focus,
+.print-content .view-awards .views-row {
+    background: none;
+    margin: 12px 0 0 0;
+    padding-left: 0;
+}
+
+.print-source_url strong,
+.pdf .print-logo img {
+    display: none;
+}
+
+.print-source_url {
+    margin-top: 40px;
+}
+
+.pane-print-ui {
+    display: inline;
+    float: right;
+}
+
+#main-wrapper .pane-print-ui a {
+    border-bottom: 0 none;
+}
+
+.node-type-faculty-staff .panel-2col-stacked .panel-col-first .inside {
+    position: relative;
+}
+
+
+.pane-print-ui img {
+    min-width: 15px;
+    width: 24px;
+}
+
+.pane-views-staff-member-block-1 {
+    overflow: auto;
+}
+
+.pane-views-staff-member-block-1 .view-professor .item-list .views-row-first {
+    padding-top: 0 !important;
+}
+
+.pane-print-ui {
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+
+
+/*body.pdf:after{
+    display:none;
+    content: url('/sites/all/themes/ansirh/images/pdf-background.png');
+}*/
+
+.pdf {
+    padding-top: 36pt !important;
+    position: relative;
+}
+
+.pdf .print-logo {
+    background-image: url('/sites/all/themes/ansirh/images/pdf-background.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: -36pt;
+}
+
+body.pdf,
+.pdf .views-field-title h2 {
+    font-family: helvetica, arial, sans-serif;
+}
+
+/*
+.pdf .print-content {
+     padding-top: 50px;
+ }
+*/
+
+.pdf .print-content .view-publications li.views-row,
+.pdf .print-content .view-media-coverage li.views-row,
+.pdf .print-content .view-awards li.views-row {
+    margin-left: 30px;
+}
+
+.pdf .print-content {
+    position: relative;
+    top: 30pt;
+}
+
+.pdf .print-content .views-field-field-staff-photo img {
+    border-color: #fff;
+    height: auto;
+    padding-right: 30px !important;
+    position: absolute;
+    top: 4pt;
+    width: 100pt;
+}
+
+
+/* subscription form */
+
+.subscribe h1#page-title::after {
+    content: " to our listserv";
+}
+
+.subscribe fieldset {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.subscribe #newsletter-manage-subscriptions-form label,
+.subscribe #newsletter-manage-subscriptions-form #edit-mail legend {
+    color: #F48024;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.subscribe #edit-field-newsletter-list,
+.subscribe #edit-info legend {
+    display: none;
+}
+
+.subscribe #newsletter-manage-subscriptions-form input {
+    min-width: 30em;
+    padding-left: 8px;
+}
+
+.subscribe #newsletter-manage-subscriptions-form .edit-submit input {
+    margin-top: 15px;
+    min-width: 0;
+}
+
+span.button input.form-submit:hover,
+span.button input.form-submit:focus,
+#edit-cancel:hover,
+#edit-cancel:focus,
+a#edit-cancel {
+    background-color: #F48024;
+    border-color: #F48024;
+}
+
+#main-wrapper a#edit-cancel {
+    border: 1px solid #F48024;
+    color: #fff;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 100%;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+#main-wrapper a#edit-cancel:hover {
+    background-color: #999;
+    border: 1px solid #999;
+    color: #fff !important;
+}
+
+/*  403 and 404 pages  */
+
+.page-node-393 #main-content .region-content .block,
+.page-node-394 #main-content .region-content .block {
+    font-size: .85em;
+    margin-top: 2em;
+    width: 47.5%;
+}
+
+.page-node-394 #main-content .region-content #block-views-publications-block,
+.page-node-393 #main-content .region-content #block-views-publications-block {
+    margin-right: 0;
+}
+
+.page-node-393 #main-content .region-content .block h2,
+.page-node-394 #main-content .region-content .block h2 {
+    color: #333;
+    font-size: 1.077em;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+#article-393 .field-name-body img {
+    margin-top: 1.5em;
+}
+
+.page-node-393 #main-content .region-content .block.banner-credit,
+.page-node-394 #main-content .region-content .block.banner-credit {
+    display: none;
+}
+
+.page-node-393 #main-content #block-views-publications-block {
+    width: 100%;
+}
+
+/* sitemap */
+
+.not-front.page-sitemap #main-content ul li {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.page-sitemap #block-system-main h2,
+.page-sitemap a.feed-link,
+.page-sitemap .site-map-box-front,
+.page-sitemap .views-field-field-banner-text,
+.node-type-faculty-staff .views-field-field-banner-text {
+    display: none;
+}
+
+/* temp fix on news page */
+
+.page-node-1432 #block-block-17 {
+    display: none;
+}
+
+/* ANSIRH updates */
+h3.update {
+    border-top: 1px solid #efefef;
+    clear: both;
+    margin-top: 1.5em;
+    padding-top: 1.2em;
+}
+
+/* abortion onscreen database */
+
+.abortion-onscreen-database .view-Slideshow .views-row-2 {
+    display: none;
+}
+
+.abortion-onscreen-database.page-research h1#page-title {
+    display: block;
+}
+
+.abortion-onscreen-database form {
+    margin-bottom: 0;
+}
+
+.abortion-onscreen-database .views-exposed-widget .form-item {
+    margin-bottom: 1.3em;
+    margin-top: 0;
+}
+
+.abortion-onscreen-database .views-exposed-widget {
+    display: inline-block;
+    margin-right: 1.5em;
+    vertical-align: top;
+}
+
+.abortion-onscreen-database #edit-title-wrapper {
+    width: 30%;
+}
+
+.abortion-onscreen-database #edit-title {
+    width: 100%;
+}
+
+/*
+.abortion-onscreen-database #edit-title-autocomplete {
+    background: #fff;
+    z-index: 10000;
+}
+
+*/
+.abortion-onscreen-database #autocomplete ul {
+    background:#ffffff;
+    color:#2e2e2e;
+}
+.abortion-onscreen-database #autocomplete ul li { margin:0; }
+.abortion-onscreen-database #autocomplete ul li:hover { background:none; }
+.abortion-onscreen-database #autocomplete ul div {
+    cursor:pointer;
+    position:relative;
+    display:block;
+    margin-left: 0;
+    padding:3px 3px 3px 0;
+    width:100%;
+}
+
+.abortion-onscreen-database #autocomplete ul div:hover {
+    /*
+    background:#779125;
+    */
+    color:#F48024;
+}
+
+.abortion-onscreen-database #autocomplete ul li,
+.abortion-onscreen-database #autocomplete ul li:hover {
+    background-image: none;
+}
+
+.abortion-onscreen-database #edit-field-onscreen-release-date-value-wrapper .views-widget > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.abortion-onscreen-database .date-year select {
+    height: 30px;
+    margin: 1px 0 0;
+    width: 100px;
+}
+
+.abortion-onscreen-database #ui-datepicker-div {
+    display: none !important;
+}
+
+.abortion-onscreen-database #edit-field-onscreen-release-date-value-wrapper .date-date input,
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-min input,
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-max input {
+    width: 150px;
+}
+
+.abortion-onscreen-database .date-padding .description {
+    display: none;
+}
+
+.abortion-onscreen-database select,
+.abortion-onscreen-database input {
+    font-family: open-sans;
+    color: #999;
+    font-size: .9em;
+}
+
+.abortion-onscreen-database select {
+    height: 30px;
+}
+
+.abortion-onscreen-database #edit-field-onscreen-media-type-value,
+.abortion-onscreen-database #edit-field-onscreen-genre-value,
+.abortion-onscreen-database #edit-field-onscreen-legality-value,
+.abortion-onscreen-database #edit-field-onscreen-age-value,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value,
+.abortion-onscreen-database #edit-field-onscreen-time-period-cat-value {
+    width: 150px;
+}
+
+/*.abortion-onscreen-database #edit-field-onscreen-outcome-category-value,
+.abortion-onscreen-database #edit-field-onscreen-race-value {
+    height: 27px;
+}*/
+
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-min::before {
+    content: "Start date";
+    display: block;
+    margin-bottom: 1px;
+}
+
+.abortion-onscreen-database #edit-field-onscreen-time-period-cat-value-wrapper,
+.abortion-onscreen-database .views-widget-per-page {
+    margin-top: 16px;
+}
+
+.abortion-onscreen-database .views-widget-per-page label {
+    color: #F48024;
+}
+
+.abortion-onscreen-database #edit-field-onscreen-release-date-value-max-date,
+.abortion-onscreen-database .form-item-field-onscreen-release-date-value-max {
+    margin-right: 0;
+}
+
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-max::before {
+    content: "End date";
+    display: block;
+    margin-bottom: 1px;
+}
+
+.abortion-onscreen-database #ui-datepicker-div {
+    display: none !important;
+}
+
+.abortion-onscreen-database .form-item-field-onscreen-time-dates-from-max label {
+    display: none;
+}
+
+.abortion-onscreen-database #edit-field-onscreen-time-dates-from-wrapper .views-widget > div {
+    float: left;
+    margin-right: 1em;
+}
+
+.abortion-onscreen-database .views-exposed-widget.views-submit-button,
+.abortion-onscreen-database .views-exposed-widget.views-reset-button {
+    margin-top: 32px;
+}
+
+.abortion-onscreen-database th {
+    background: #fff;
+    padding-top: 0;
+}
+
+.abortion-onscreen-database .views-field-field-onscreen-image {
+    padding: .5em 0;
+}
+
+.abortion-onscreen-database #main-wrapper .views-field-field-onscreen-image a {
+    border-bottom: 0;
+}
+
+.abortion-onscreen-database #main-wrapper thead a,
+.abortion-onscreen-database #main-wrapper th {
+    /*
+    border-bottom: 0;
+    */
+    color: #F48024;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.abortion-onscreen-database #main-wrapper thead a:hover {
+    color: #215281 !important;
+}
+
+.abortion-onscreen-database thead tr {
+    border-bottom: 1px dotted #ccc;
+}
+
+.abortion-onscreen-database td {
+    font-size: .93em !important;
+    text-align: center;
+}
+
+.abortion-onscreen-database td.views-field-title,
+.abortion-onscreen-database td.views-field-field-onscreen-genre,
+.abortion-onscreen-database td.views-field-field-onscreen-episode-title {
+    text-align: left;
+}
+
+.abortion-onscreen-database td.active {
+    background-color: transparent;
+}
+
+.abortion-onscreen-database .views-field-field-onscreen-location-category {
+    padding-right: 0;
+}
+
+.abortion-onscreen-database.not-front #main-content .views-field-field-onscreen-genre li {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+    margin: 0;
+    line-height: 1.3em;
+    padding-left: 0;
+}
+
+.abortion-onscreen-database .views-row-last td {
+    border-bottom: 0;
+}
+
+.abortion-onscreen-database .view-header {
+    margin-bottom: 1.5em;
+}
+
+.abortion-onscreen-database .view-header p {
+    font-size: .9em;
+}
+
+
+.abortion-onscreen-database #edit-title-wrapper,
+.abortion-onscreen-database #edit-body-value-wrapper,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value-wrapper {
+    position: relative;
+}
+
+.abortion-onscreen-database #edit-title-wrapper .description,
+.abortion-onscreen-database #edit-body-value-wrapper .description,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value-wrapper .description {
+    display: none;
+}
+
+.abortion-onscreen-database #edit-title-wrapper:hover .description,
+.abortion-onscreen-database #edit-title-wrapper:focus .description,
+.abortion-onscreen-database #edit-title-wrapper:active .description,
+.abortion-onscreen-database #edit-body-value-wrapper:hover .description,
+.abortion-onscreen-database #edit-body-value-wrapper:focus .description,
+.abortion-onscreen-database #edit-body-value-wrapper:active .description,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value-wrapper:hover .description,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value-wrapper:focus .description,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value-wrapper:active .description {
+    background-color: #F48024;
+    color: #fff;
+    display: inline-block;
+    font-size: .8em;
+    position: absolute;
+    z-index: 20000;
+    left: -25px;
+    bottom: 80%;
+    padding: 6px 12px 7px;
+}
+
+.abortion-onscreen-database #edit-title-wrapper .description:after,
+.abortion-onscreen-database #edit-body-value-wrapper .description:after,
+.abortion-onscreen-database #edit-field-onscreen-location-category-value-wrapper .description:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #F48024 10px;
+    bottom: -10px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+.abortion-onscreen-database .views-field-field-onscreen-image {
+    width: 4%;
+}
+
+.abortion-onscreen-database .views-field.views-field-field-onscreen-episode-title {
+    width: 15%;
+}
+
+.abortion-onscreen-database .views-field-field-onscreen-release-date-1 {
+    width: 13%;
+}
+
+.abortion-onscreen-database .views-field.views-field-field-onscreen-media-type,
+.abortion-onscreen-database .views-field-field-onscreen-location-category,
+.abortion-onscreen-database .views-field.views-field-field-onscreen-genre {
+    width: 8%;
+}
+
+.abortion-onscreen-database .views-field.views-field-field-onscreen-legality {
+    width: 9%;
+}
+
+.abortion-onscreen-database .views-field.views-field-field-onscreen-outcome-category {
+    width: 10%;
+}
+
+
+.abortion-onscreen .view-abortion-onscreen-database div.views-field {
+    margin-bottom: 15px;
+}
+
+.abortion-onscreen .inline-head {
+    color: #F48024;
+    display: inline;
+    font-size: 1.1em;
+}
+
+.abortion-onscreen .inline-head + .field-content p:first-child {
+    display: inline;
+    clear: none;
+}
+
+.abortion-onscreen .views-field-field-onscreen-image img {
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 20px;
+    padding: 2px;
+}
+
+.media-type {
+     color: #999;
+     font-size: .6em;
+     text-transform: lowercase;
+}
+
+.node-type-abortion-portrayal .view-abortion-onscreen-database .views-row {
+    display: block;
+    overflow: auto;
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0 8px;
+    font-size: .9em;
+    color: #777;
+}
+
+.node-type-abortion-portrayal.abortion-onscreen .recent-listings .views-field-field-onscreen-image img {
+    background: #fcfcfc;
+    border: none;
+    border-radius: 0;
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.abortion-onscreen .view-abortion-onscreen-database div.views-field.views-field-title {
+    margin-bottom: 5px;
+}
+
+.node-type-abortion-portrayal .view-abortion-onscreen-database .views-row-5 {
+    border-bottom: 0;
+    margin-bottom: 15px;
+}
+
+/* in-page slideshow */
+
+.in-page-slideshow {
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.in-page-slideshow .views-slideshow-controls-bottom {
+    bottom: 0;
+    display: block;
+    right: 0;
+    position: absolute;
+    width: 82px;
+    z-index: 900;
+}
+
+.in-page-slideshow .views-slideshow-controls-bottom span {
+    background-image: url("/sites/all/themes/ansirh/images/sl-btn-direction.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-indent: -999em;
+    width: 40px;
+}
+
+.in-page-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-previous {
+    background-position: left top;
+}
+
+.in-page-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-pause {
+    display: none;
+}
+
+.in-page-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-next {
+    background-position: right top;
+    float: right;
+}
+
+
+.abortion-prenatal-study-louisiana-and-maryland .view-Slideshow .views-row.views-row-2.views-row-even {
+    display: none;
+}
+
+/* mobile */
+
+@media screen and (max-width: 1040px) {
+
+    .not-front .grid.grid-18 {
+        width: 700px !important;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .node-type-publication .field-type-video-embed-field a {
+        border-bottom: 0 none !important;
+        display: block;
+        max-height: 220px !important;
+        overflow: hidden;
+    }
+
+    .node-type-publication .field-type-video-embed-field img {
+        margin-top: -35px;
+    }
+
+    .news .align-right,
+    .news .align-left {
+        margin: 5px 0;
+        max-width: 95% !important;
+    }
+
+    .news .align-left {
+        margin: 0 15px 5px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .node-type-publication .field-type-video-embed-field a {
+        max-height: 190px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .node-type-publication .field-type-video-embed-field a {
+        border-bottom: 0 none !important;
+        display: block;
+        max-height: 165px !important;
+        overflow: hidden;
+    }
+
+    .node-type-publication .field-type-video-embed-field img {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+
+    .node-type-publication .field-type-video-embed-field a {
+        border-bottom: 0 none !important;
+        display: block;
+        max-height: 125px !important;
+        overflow: hidden;
+    }
+
+    .node-type-publication .field-type-video-embed-field img {
+        margin-top: -15px;
+    }
+}
+

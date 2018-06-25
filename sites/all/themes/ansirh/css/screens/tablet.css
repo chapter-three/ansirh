@@ -1,0 +1,82 @@
+/* 
+    Document   : tablet
+*/
+.form-text,
+.webform-client-form .form-textarea,
+span.button input.form-submit,
+.sidebar .search-form .form-text,
+#header #search-block-form .form-text,
+#header #search-block-form .form-submit,
+.block-newsletter .form-item-email input,
+.block-newsletter span.button input.form-submit,
+.sidebar .search-form span.button input.form-submit {  
+  -webkit-appearance: none;
+  -webkit-border-radius: 0 !important;
+}
+
+.sidebar .search-form .form-text {
+  width: 80%;
+}
+
+#header-wrapper .container,
+div.container,
+.grid-24,
+#ucsf-banner-nav .top-header-container {
+    width: 980px;
+    max-width: 980px;
+}
+
+#slideshow-wrapper .container.grid-24 {
+    width: auto !important;
+    max-width: 1010px !important;
+}
+
+.region-header {
+    width: 34%;
+}
+
+.region-header #search-block-form .form-text {
+    width: 200px;
+}
+
+#menu-bar-wrapper .region-menu-bar {
+    width: 65%;
+}
+
+.donate {
+     font-size: 15px;
+     margin-left: 10px;
+     padding: 2px 7px 3px;
+}
+
+.front .region-slideshow .view-Slideshow {
+    overflow: hidden !important;
+}
+
+.view.grid-16 {
+    width: 640px;
+}
+
+/* videos */
+
+.videos h2 {
+    font-size: 1.3em;
+}
+
+.videos #main-wrapper a.colorbox-load {
+    border-bottom: 0;
+}
+
+.videos .icon {
+    height: 168px;
+}
+
+/* research pages */
+
+.restrictions ul.quicktabs-tabs {
+    width: 40%;
+}
+
+.restrictions .quicktabs_main {
+    width: 55%;
+}

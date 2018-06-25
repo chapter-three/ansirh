@@ -1,0 +1,255 @@
+
+body {
+    background: #fafbfb;
+}
+
+a:hover {
+    color: #0061a0;
+}
+
+a:active,
+a.active {
+    color: #5894be;
+}
+
+hr {
+    background: #d4d4d4;
+}
+
+#wrapper {
+    background: #fafbfb url(/sites/all/themes/ansirh_admin/images/body.png) repeat-x 50% 0;
+}
+
+#wrapper #container #center #squeeze {
+    background: #ffffff url(/sites/all/themes/ansirh_admin/images/bg-content.png) repeat-x 50% 0;
+}
+
+#wrapper #container #center .right-corner .left-corner {
+    background: transparent url(/sites/all/themes/ansirh_admin/images/bg-content-left.png) no-repeat 0 0;
+}
+
+#wrapper #container #center .right-corner {
+    background: transparent url(/sites/all/themes/ansirh_admin/images/bg-content-right.png) no-repeat 100% 0;
+}
+
+.hide {
+    display: none;
+}
+
+.description b {
+    color: #990000;
+}
+
+.cke_source {
+    white-space: normal !important;
+}
+
+/* dashboard */
+
+.page-admin-dashboard tr {
+    padding-right: 0;
+}
+
+.page-admin-dashboard input.form-checkbox {
+    margin: 3px 0;
+}
+
+.page-admin-dashboard .views-field-views-bulk-operations {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.page-admin-dashboard td.views-field.views-field-title {
+    width: 60%;
+}
+
+.page-admin-dashboard td.views-field-field-expected-finish-date {
+    padding-left: 3em;
+}
+
+.page-admin-dashboard .views-field-edit-node,
+.page-admin-dashboard .delete {
+    padding-right: 0;
+    text-align: right;
+}
+
+.page-admin-dashboard .title-author {
+    padding-left: 0;
+}
+
+.page-admin-dashboard .content .node-author,
+.page-admin-dashboard .content .node-title {
+    display: inline;
+}
+
+.page-admin-dashboard .content .node-author::before {
+    content: '(';
+    margin-left: 5px;
+}
+
+.page-admin-dashboard .content .node-author::after {
+    content: ')';
+}
+
+#dashboard_sidebar {
+    margin-left: 2em;
+}
+
+#dashboard div#dashboard_sidebar {
+    margin-left: 2em;
+    width: 30%;
+}
+
+.page-admin-dashboard #edit-tokens {
+    display: none;
+}
+
+/* publications */
+
+.node-type-publication .field {
+    margin-top: 10px;
+}
+
+
+/* research projects & studies */
+
+.page-manage-research-projects caption,
+.page-manage-research-studies caption {
+    font-weight: bold; !important;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.page-manage-research-projects .views-field-title,
+.page-manage-research-studies .views-field-title {
+    width: 60%;
+}
+
+.page-manage-research-projects .views-field-field-key-contact-person,
+.page-manage-research-projects .views-field-field-principal-investigator {
+    width: 20%;
+}
+
+/* abortion onscreen database */
+
+.node-abortion_portrayal-form input#edit-title,
+#edit-field-onscreen-series-title input,
+#edit-field-onscreen-episode-number input,
+#edit-field-onscreen-network input,
+#edit-field-onscreen-pxn-co input,
+#edit-field-onscreen-location-state input,
+#edit-field-onscreen-location-country input,
+#edit-field-onscreen-outcome-specific input,
+#edit-field-onscreen-link-to-media input {
+    width: 99.5%;
+}
+
+.node-abortion_portrayal-form .form-wrapper {
+    margin-top: 1.5em;
+}
+
+.node-abortion_portrayal-form .filter-wrapper {
+    padding-top: 0;
+    margin-top: .5em;
+}
+
+.node-abortion_portrayal-form .filter-wrapper .form-item,
+.node-abortion_portrayal-form .fieldset-wrapper .form-item,
+#edit-field-onscreen-link-to-media .form-type-textfield {
+    padding-left: 0;
+    margin: 0;
+}
+
+.node-abortion_portrayal-form .filter-wrapper .filter-help,
+.node-abortion_portrayal-form .filter-guidelines ul.tips,
+#edit-body-und-0-format-guidelines {
+    display: none;
+}
+
+.node-abortion_portrayal-form .description {
+    margin-top: 2px;
+}
+
+.node-abortion_portrayal-form .tabledrag-toggle-weight-wrapper {
+    display: none;
+}
+
+.node-abortion_portrayal-form #edit-field-onscreen-episode-und-0-remove-button {
+    margin-top: 1.7em;
+}
+
+.node-abortion_portrayal-form #edit-field-onscreen-episode-number,
+.node-abortion_portrayal-form #edit-field-onscreen-series-title {
+    display: none;
+}
+
+.node-abortion_portrayal-form #edit-field-onscreen-episode-title-und-0-value {
+    width: 960px;
+}
+
+.node-abortion_portrayal-form .form-radios,
+.node-abortion_portrayal-form .form-checkboxes {
+    display: block;
+    overflow: auto;
+}
+
+.node-abortion_portrayal-form .form-type-radio,
+.node-abortion_portrayal-form .form-type-checkbox {
+    float: left;
+    margin-right: 1em;
+    margin-top: 0;
+}
+
+.node-abortion_portrayal-form fieldset {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.node-abortion_portrayal-form .fieldset-wrapper .form-item label {
+    font-weight: normal;
+}
+
+#field-onscreen-release-date-add-more-wrapper fieldset legend,
+#edit-field-onscreen-time-dates fieldset legend {
+    margin-top: 1.5em;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+#field-onscreen-release-date-add-more-wrapper fieldset.date-combo .container-inline-date > .form-item {
+    margin-bottom: 0;
+}
+
+#field-onscreen-release-date-add-more-wrapper fieldset.date-combo .container-inline-date .date-padding {
+    padding:0;
+}
+
+#edit-field-onscreen-data-status {
+    margin-bottom: 3em;
+}
+
+#edit-field-onscreen-time-period-cat .form-radios > div:first-child,
+#edit-field-onscreen-location-category .form-radios > div:first-child
+#edit-field-onscreen-data-status .form-radios > div:first-child,
+.node-abortion_portrayal-form #edit-field-onscreen-data-status .form-radios > div:first-child,
+.page-manage-abortion-onscreen-database .field-name-field-onscreen-data-status .form-radios > div:first-child,
+.page-manage-abortion-onscreen-database .field-name-field-onscreen-data-status .description,
+.page-manage-abortion-onscreen-database .field-name-field-onscreen-data-status + div {
+    display: none;
+}
+
+.views-field-field-onscreen-link-to-media {
+    text-align: center;
+}
+
+.view-abortion-onscreen-database.admin-view .views-field-php li {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.view-abortion-onscreen-database.admin-view #edit-field-onscreen-age-value-wrapper,
+.view-abortion-onscreen-database.admin-view .views-submit-button {
+    clear: both;
+}

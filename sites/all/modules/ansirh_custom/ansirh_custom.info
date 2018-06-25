@@ -1,0 +1,9 @@
+name = ANSIRH custom
+description = "code specific to ANSIRH site"
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2015-05-11
+version = "7.x-3.1"
+core = "7.x"
+project = "ansirh_custom"
+

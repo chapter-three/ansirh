@@ -1,0 +1,59 @@
+<?php
+
+require_once("sites/all/libraries/dompdf/dompdf_config.inc.php");
+/*$html = '/sites/all/themes/ansirh/print.tpl.php';
+$dompdf = new DOMPDF;
+$dompdf->load_html($html);
+$dompdf->render();
+// This does not save the pdf field and instead it opens a dialog box asking whether you have to save the pdf or not
+$dompdf->stream("sample.pdf");*/
+
+
+function returnSingleFieldValue($entityType,$entity,$fieldName) {
+  $items = field_get_items($entityType,$entity,$fieldName);
+  if (!empty($items)) {
+    if (isset($items[0]['value'])) {
+      return $items[0]['value'];
+    }
+  }
+  return false;
+}
+
+function getNewsletterSubscriberInfo($subscriber) {
+$first_query = db_select('field_data_field_first_name', 'f')
+  ->fields('f', array('field_first_name_value'))
+  ->condition('f.entity_type', 'newsletter_subscriber')
+  ->condition('f.entity_id', $subscriber);
+$first_name_result = $first_query->execute()->fetchField();
+  if(!empty($first_name_result)) $first_name = $first_name_result;
+  else $first_name = '';
+
+  $last_query = db_select('field_data_field_last_name', 'f')
+  ->fields('f', array('field_last_name_value'))
+  ->condition('f.entity_type', 'newsletter_subscriber')
+  ->condition('f.entity_id', $subscriber);
+$last_name_result = $last_query->execute()->fetchField();
+  if(!empty($last_name_result)) $last_name = ' '.$last_name_result;
+  else $last_name = '';
+
+  $org_query = db_select('field_data_field_organization', 'f')
+  ->fields('f', array('field_organization_value'))
+  ->condition('f.entity_type', 'newsletter_subscriber')
+  ->condition('f.entity_id', $subscriber);
+$org_result = $org_query->execute()->fetchField();
+if(!empty($org_result)) $org = ', '.$org_result;
+else $org = '';
+
+  return $first_name.$last_name.$org;
+}
+
+function ansirh_custom_update_projects_alter(&$projects) {
+    // Hide a site-specific module from the list.
+    unset($projects['ansirh_custom']);
+}
+
+function ansirh_custom_form_alter(&$form, &$form_state, $form_id){
+    if ($form_id == 'newsletter_manage_subscriptions_form') {
+        honeypot_add_form_protection($form, $form_state, array('honeypot', 'time_restriction'));
+    }
+}

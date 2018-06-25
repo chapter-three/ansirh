@@ -1,0 +1,657 @@
+/* 
+Document   : tablet
+*/
+/*panel first*/
+.panel-first .block ul.menu {
+    text-align: center;
+}
+
+.panel-first .block ul.menu li {
+    float: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#panel-second-wrapper .grid-inner {
+    padding: 30px 10px;
+}
+
+#panel-second-wrapper .cols-4 .views-col,
+#panel-second-wrapper .panel-cols-4 .panel-column {
+    width: 25% !important;
+}
+
+#panel-second-wrapper img {
+    height: auto;
+    width: 100%;
+}
+
+#panel-third-wrapper .grid-inner {
+    padding: 0 20px;
+}
+
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 100%;
+}
+
+#search-block-form .container-inline div.form-item-search-block-form {
+     width: 570px;
+}
+
+.region-header #search-block-form .form-text {
+    width: 100%;
+}
+
+.donate {
+     float: right;
+ }
+
+/*slideshow*/
+#slideshow-wrapper {
+    border-bottom: 0;
+}
+
+.region-slideshow .views-field-field-slideshow:after,
+.region-slideshow .views-field-field-slideshow:before {
+    height: 100%;
+}
+
+.region-slideshow .views-slideshow-controls-bottom {
+    bottom: 0;
+    right: 15px;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper {
+    bottom: 0;
+    font-size: 12px;
+    width: 360px;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper .views-field-title a {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.front #sidebar-first-wrapper {
+    width: 50% !important;
+    float: left;
+}
+
+.front #sidebar-second-wrapper {
+    width: 50% !important;
+    float: right;
+}
+
+.front #sidebar-second-wrapper .region-sidebar-second > .block {
+    width: 100%;
+    float: none;
+}
+
+.front #sidebar-second-wrapper .grid-inner,
+.front #sidebar-first-wrapper .grid-inner {
+    padding: 0 20px;
+}
+
+.front #sidebar-second-wrapper .block-inner {
+    padding: 0;
+}
+
+#sidebar-second-wrapper {
+    width: 100%;
+}
+
+#sidebar-second-wrapper .region-sidebar-second > .block {
+    width: 50%;
+    float: left;
+}
+
+#sidebar-second-wrapper > .grid-inner {
+    padding: 10px;
+}
+
+#sidebar-second-wrapper .block-inner {
+    padding: 0 10px;
+}
+
+#sidebar-second-wrapper iframe {
+    width: 98% !important;
+}
+
+#panel-second-wrapper .block .views-field-title {
+    font-size: 12px;
+}
+
+#sidebar-second-wrapper .region-sidebar-second > #block-quicktabs-quicktabs--2.block {
+    width: 100%;
+}
+
+#quicktabs-quicktabs .block-views > .block-inner {
+    padding-left: 0;
+}
+
+#block-quicktabs-quicktabs--2 .quicktabs-tabs li {
+    float: left;
+    width: 50%;
+}
+
+#block-quicktabs-quicktabs--2 ul.quicktabs-tabs li,
+#block-quicktabs-quicktabs--2 ul.quicktabs-tabs li:hover {
+    background: rgba(0, 0, 0, 0) url("/sites/all/themes/ansirh/images/arrow-tab.png") no-repeat scroll 15% bottom;
+}
+
+#block-quicktabs-quicktabs--2 ul.quicktabs-tabs li a {
+    background: #052049 none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
+
+.quicktabs-tabpage {
+    clear: none;
+    float: left;
+    width: 50%;
+}
+
+.quicktabs-hide {
+    display: block;
+}
+
+#panel-third-wrapper .grid-inner {
+    padding: 0 10px;
+}
+
+#panel-fifth-wrapper .panel-fifth-1,
+#panel-fifth-wrapper .panel-fifth-2,
+#panel-fifth-wrapper .panel-fifth-3,
+#panel-fifth-wrapper .panel-fifth-4,
+#panel-fifth-wrapper .panel-fifth-5,
+#panel-fifth-wrapper .panel-fifth-6 {
+    width: 33.32% !important;
+}
+
+#panel-fifth-wrapper .panel-fifth-1,
+#panel-fifth-wrapper .panel-fifth-2,
+#panel-fifth-wrapper .panel-fifth-3 {
+    margin: 0 0 30px 0;
+}
+
+#logo {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+/*menu responsive*/
+.responsive-menu-button {
+    background-image: url("/sites/all/themes/ansirh/images/hamburger.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    display: block !important;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 100%;
+    margin-right: 20px;
+    padding: .8em 1em;
+    z-index: 4;
+}
+
+.responsive-menu-button:active,
+.responsive-menu-button:focus,
+.responsive-menu-button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu-bar-wrapper {
+    background: #10151C;
+}
+
+#menu-bar-wrapper .region-menu-bar,
+.region-header {
+    float: none;
+    width: 100%;
+}
+
+#menu-bar-wrapper .container {
+    background: #425776;
+    position: absolute;
+    top: 27px;
+
+}
+
+#menu-bar-wrapper .grid-inner {
+    padding: 0;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university {
+    float: none;
+}
+
+#menu-bar-wrapper .menu.sf-menu li {
+    border-bottom: 1px solid #052049;
+    border-right: 0;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+.node-type-faculty-staff span#about,
+.about span#about,
+.newsletter span#about,
+.node-type-research-project a#research,
+.node-type-research-study a#research,
+.page-resources a#resources,
+.page-ansirh-resources a#resources,
+.page-publications a#publications,
+.page-ansirh-publications a#publications,
+.node-type-publication a#publications,
+.early-abortion-training-workbook a#publications,
+.apc-toolkit a#publications,
+.research a#research,
+.ansirh-in-the-news span#news,
+.ANSIRH-news span#news,
+.news span#news,
+.front a#home,
+li.sf-depth-1 > a:hover,
+li.sf-depth-1 > span:hover,
+li.sf-depth-1 > a:active,
+li.sf-depth-1 > span:active,
+li.sf-depth-1 > a:focus,
+li.sf-depth-1 > span:focus,
+li.sf-depth-1.sfhover > a,
+.menu.sf-menu.sf-style-university > li.sfHover > a,
+.menu.sf-menu.sf-style-university > li > a:active,
+.menu.sf-menu.sf-style-university > li > a:focus,
+.menu.sf-menu.sf-style-university > li > a:hover,
+.page-search .form-item-search-block-form,
+.page-node-393 .form-item-search-block-form,
+.page-node-394 .form-item-search-block-form {
+    border-bottom: 0 !important;
+    color: #eaf1f7 !important;
+}
+
+
+#menu-bar-wrapper .menu.sf-menu li ul li {
+    border-bottom: none;
+}
+
+#menu-bar-wrapper .menu.sf-menu li ul ol li {
+    border-bottom: 1px solid #2B2C2E;
+}
+
+#menu-bar-wrapper .menu.sf-menu li ol li .sf-megamenu-column {
+    border-bottom: 1px solid #2B2C2E;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul {
+    padding: 0;
+    position: static;
+    top: 0;
+    width: 100% !important;
+}
+
+#superfish-1 > li > ul {
+    margin-bottom: 20px !important;
+    padding-left: 20px !important;
+}
+
+#superfish-1 li.sf-depth-2 {
+    display: inline-block !important;
+    float: left !important;
+    margin-right: 12px !important;
+    width: auto !important;
+}
+
+#superfish-1 .sf-depth-2 > a,
+#superfish-1 .sf-depth-2 > span {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border-right: 1px solid #9ba6b6;
+    line-height: 1 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+}
+
+#superfish-1 .sf-depth-2.last > a,
+#superfish-1 .sf-depth-2.last > span {
+    border-right: 0;
+}
+
+#superfish-1 .sf-depth-2 > a:hover,
+#superfish-1 .sf-depth-2 > span:hover {
+    background-color: transparent !important;
+    color: #f48024 !important;
+}
+
+#superfish-1 .sf-depth-3,
+#superfish-1 .sf-depth-3 a,
+#superfish-1 .sf-depth-3 span,
+#superfish-1 .sf-depth-2 a span {
+    display: none !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul .sf-megamenu-column {
+    padding: 0 !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li.last {
+    border-bottom: 0 !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li a {
+    border-top: 0 !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul a {
+    background: #1B212A;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li a {
+    padding: 10px 20px
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li ol li a {
+    background: #1B212A;
+    padding: 10px 40px
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-navbar.sf-style-university ul a {
+    padding: 15px 0 15px 40px;
+    width: 100% !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university.sf-navbar ul li {
+    border-bottom: 1px solid #2B2C2E;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university.sf-navbar ul li.last {
+    border-bottom: 0;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university.sf-navbar ul li a .sf-sub-indicator {
+    background: url("../../images/arrow-3.png") no-repeat 15px 0;
+    top: 1.5em !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-navbar.sf-style-university ul ul {
+    margin: 0;
+    width: 100% !important;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-navbar.sf-style-university ul ul a {
+    border-top: 0 !important;
+    padding: 15px 0 15px 60px;
+}
+
+.front .menu.sf-menu.sf-style-university > li.active-trail > a,
+.front .menu.sf-menu.sf-style-university > li.sfHover > a,
+.front .menu.sf-menu.sf-style-university > li > a:active,
+.front .menu.sf-menu.sf-style-university > li > a:focus,
+.front .menu.sf-menu.sf-style-university > li > a:hover {
+    background-color: transparent !important;
+}
+
+.menu.sf-menu.sf-style-university li.sf-parent-children-1 ul.sf-megamenu {
+    width: 100% !important;
+}
+
+.menu.sf-menu.sf-style-university > li > span {
+    background: rgba(0, 0, 0, 0) url("/sites/all/themes/ansirh/images/arrow-3.png") no-repeat scroll 8px 18px;
+}
+
+.view-events .group-event-time .field-type-text-long:last-of-type {
+    font-size: 14px;
+}
+
+.node-type-events .article .field-type-image img,
+.view-events .article .field-type-image img {
+    height: auto;
+    width: auto;
+}
+
+.node-type-events .group-event-time .field-type-text-long:last-of-type,
+.view-events .group-event-time .field-type-text-long:last-of-type {
+    font-size: 14px;
+}
+
+div.contact-map .map-info {
+    padding: 0 12px;
+}
+
+div.contact-map img {
+    width: 64%;
+}
+
+div.contact-miscinfo {
+    top: 355px;
+}
+
+.page-user-password #main-wrapper #main-content > .grid-inner,
+.page-user-register #main-wrapper #main-content > .grid-inner,
+.page-user #main-wrapper #main-content > .grid-inner,
+.page-user-login #main-wrapper #main-content > .grid-inner {
+    margin: 0 auto;
+}
+
+.page-user-password #main-wrapper #main-content > .grid-inner .form-text,
+.page-user-register #main-wrapper #main-content > .grid-inner .form-text,
+.page-user #main-wrapper #main-content > .grid-inner .form-text,
+.page-user-login #main-wrapper #main-content > .grid-inner .form-text {
+    width: 95%;
+}
+
+.form-text,
+.webform-client-form .form-textarea,
+span.button input.form-submit,
+.sidebar .search-form .form-text,
+#header #search-block-form .form-text,
+#header #search-block-form .form-submit,
+.block-newsletter .form-item-email input,
+.block-newsletter span.button input.form-submit,
+.sidebar .search-form span.button input.form-submit {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0 !important;
+}
+
+.sidebar .search-form .form-text {
+    width: 87%;
+}
+
+.view-all-courses .view-filters select {
+    -webkit-border-radius: 0 !important;
+}
+
+.page-courses-page #main-wrapper #main-content > .grid-inner {
+    padding: 0 20px 20px 20px;
+}
+
+#menu-bar-wrapper .menu.sf-menu.sf-style-university.sf-navbar ul li a {
+    border-bottom: 1px solid #10151C;
+    border-right: 0 none;
+    height: 40px !important;
+    line-height: 40px !important;
+    width: 100%;
+}
+
+.node-professor.node-full .field-type-image img {
+    width: auto;
+}
+
+#panel-fourth-wrapper .panel-fourth-1 {
+    width: 40% !important;
+}
+
+#panel-fourth-wrapper .panel-fourth-2 {
+    margin-left: 0 !important;
+    width: 30% !important;
+}
+
+#panel-fourth-wrapper .panel-fourth-3 {
+    text-align: left;
+    width: 30% !important;
+}
+
+#panel-fourth-wrapper ul.social-list li {
+    display: inline-block;
+    float: none;
+}
+
+#panel-fifth-wrapper .panel-fifth-1 {
+    width: 100% !important;
+}
+
+
+.node-type-student-profile .node-full .field-type-image img {
+    margin: 0 0 5px;
+    width: auto;
+}
+
+.node-type-professor .article {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.page-taxonomy-term .article .field-type-image img {
+    height: auto;
+    width: auto;
+}
+
+
+.cols-3 .grid.views-col.col-2 {
+    margin: 0;
+}
+
+#main-wrapper .container {
+    padding: 0;
+}
+
+/* single sidebars */
+
+#sidebar-second-wrapper .region-sidebar-second #block-views-articles-block-1--2.block {
+    float: none;
+    width: 95%;
+}
+
+/* footer */
+
+#sitemap {
+    margin-top: 2px;
+}
+
+/* smaller devices */
+
+@media screen and (max-width: 740px) {
+
+    #main-wrapper #main-content > .grid-inner {
+        padding-top: 0;
+    }
+
+    #panel-fourth-wrapper .panel-fourth-1 {
+        float: none;
+        padding-bottom: 15px;
+        width: 100% !important;
+    }
+
+    #panel-fourth-wrapper .panel-fourth-2 {
+        margin-left: 0 !important;
+        width: 50% !important;
+    }
+
+    #panel-fourth-wrapper .panel-fourth-3 {
+        text-align: left;
+        width: 50% !important;
+    }
+
+    #sitemap {
+        margin-top: 18px;
+    }
+    .view.grid-16 {
+        width: 640px;
+    }
+
+    #sidebar-second-wrapper .region-sidebar-second > .block {
+        float: none;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .node-type-research-project #sidebar-second-wrapper .region-sidebar-second > .block {
+        float: left;
+        width: 45%;
+    }
+
+    .research #sidebar-second-wrapper .region-sidebar-second > .block:first-of-type {
+        float: none;
+        width: 100%;
+    }
+
+    .view-staff-member form .views-exposed-widget,
+    .ansirh-research .view-research-related-content .views-exposed-widget {
+        width: 30%;
+    }
+
+
+    /* videos */
+
+    .videos h2 {
+        font-size: 1.3em;
+    }
+
+    .videos #main-wrapper a.colorbox-load {
+        border-bottom: 0;
+    }
+
+    .videos .icon {
+        height: 178px;
+    }
+
+
+    /* repositioning exposed block on publications and resources pages */
+
+    .page-ansirh-publications h1#page-title,
+    .page-ansirh-resources h1#page-title {
+        display: none;
+    }
+    .page-ansirh-publications #main-content,
+    .page-ansirh-resources #main-content {
+        padding-top: 275px;
+    }
+
+    .page-ansirh-publications #sidebar-second-wrapper,
+    .page-ansirh-resources #sidebar-second-wrapper {
+        padding-left: 10px;
+        position: absolute;
+    }
+
+    .page-ansirh-resources #sidebar-second-wrapper {
+        padding-left: 0;
+        position: absolute;
+    }
+
+    .page-ansirh-publications #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-publications-page-1--2.block,
+    .page-ansirh-resources #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-resources-page-1--2.block {
+        float: none;
+        width: 100%;
+    }
+
+    .page-ansirh-publications #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-publications-page-1--2.block .views-exposed-widget,
+    .page-ansirh-resources #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-resources-page-1--2.block .views-exposed-widget {
+        float: left;
+        margin-right: 3%;
+        min-width: 45%;
+    }
+
+    .page-ansirh-publications #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-publications-page-1--2.block .views-exposed-widget:last-of-type,
+    .page-ansirh-resources #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-resources-page-1--2.block .views-exposed-widget:last-of-type {
+        margin-right: 0;
+    }
+
+    .page-ansirh-publications #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-publications-page-1--2.block .views-exposed-widget.views-submit-button, .page-ansirh-publications #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-publications-page-1--2.block .views-exposed-widget.views-reset-button,
+    .page-ansirh-resources #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-resources-page-1--2.block .views-exposed-widget.views-submit-button, .page-ansirh-resources #sidebar-second-wrapper .region-sidebar-second > #block-views-exp-resources-page-1--2.block .views-exposed-widget.views-reset-button {
+        margin-right: 0;
+        min-width: 0;
+    }
+
+    .page-ansirh-resources #sidebar-second-wrapper .region-sidebar-second #edit-field-publication-date-value-wrapper {
+        clear: both;
+    }
+
+}
+

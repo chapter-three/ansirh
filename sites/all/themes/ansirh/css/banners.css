@@ -1,0 +1,89 @@
+
+#ucsf-banner-nav {
+    background: #052049 none repeat scroll 0 0;
+    font-family: "Helvetica Neue","arial",sans-serif;
+    height: 40px;
+    overflow: hidden;
+}
+#ucsf-banner-nav.no-logo .top-header-container ul.menu li.first {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    padding-left: 0;
+    text-indent: 0;
+}
+#ucsf-banner-nav .top-header-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#ucsf-banner-nav .top-header-container ul.menu {
+    margin: 0;
+    padding: 0;
+}
+#ucsf-banner-nav .top-header-container ul.menu li.first {
+    background: rgba(0, 0, 0, 0) url("ucsf-logo-banner.png") no-repeat scroll 0 35%;
+    display: inline-block;
+    float: left;
+    padding: 12px 0 12px 58px;
+}
+@media (max-width: 600px) {
+    #ucsf-banner-nav .top-header-container ul.menu li.first {
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+}
+#ucsf-banner-nav .top-header-container ul.menu li {
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    padding: 12px 10px;
+}
+@media (max-width: 830px) {
+    #ucsf-banner-nav .top-header-container ul.menu li {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    #ucsf-banner-nav .top-header-container ul.menu li {
+        display: none;
+    }
+}
+#ucsf-banner-nav .top-header-container ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+#ucsf-banner-nav .top-header-container ul.menu li a:hover {
+    text-decoration: underline;
+}
+#ucsf-banner-nav.arial {
+    font-family: arial,sans-serif;
+}
+#ucsf-banner-nav.teal {
+    background: #058488 none repeat scroll 0 0;
+}
+#ucsf-banner-nav.light-blue {
+    background: #007cbe none repeat scroll 0 0;
+}
+#ucsf-banner-nav.grey {
+    background: #4d4d4d none repeat scroll 0 0;
+}
+#ucsf-banner-nav.purple {
+    background: #716fb2 none repeat scroll 0 0;
+}
+#ucsf-banner-nav.yellow {
+    background: #ffdd00 none repeat scroll 0 0;
+}
+#ucsf-banner-nav.white {
+    background: #ffffff none repeat scroll 0 0;
+}
+#ucsf-banner-nav.yellow a, #ucsf-banner-nav.white a {
+    color: #000000;
+}
+:root #ucsf-banner-nav .top-header-container ul.menu li.first {
+    background: rgba(0, 0, 0, 0) url("ucsf-logo-banner.svg") no-repeat scroll 0 35% / 45px 22px;
+}
+:root #ucsf-banner-nav.no-logo .top-header-container ul.menu li.first {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
